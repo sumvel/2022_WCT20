@@ -1,273 +1,209 @@
 :root {
-            /* Primary Colours */
-            --p-001: #10044A;
-            --p-002: #EE2364;
-            --p-003: #00B1E5;
-            --p-004: #F2EB0B;
-            --p-005: #2B69BF;
-            --p-006: #2B69BF;
-            --p-007: #271B5B;
-            /* Neutral Colours */
-            --n-100: #0d1635;
-            --n-90: #232b47;
-            --n-80: #3d455d;
-            --n-60: #6e7386;
-            --n-40: #9ea2ae;
-            --n-20: #cfd0d7;
-            --n-10: #e7e8eb;
-            --n-5: #f3f3f5;
-            --n-black: #000000;
-            --n-white: #fff;
-            /* Primary Tints */
-            --p-001-t-800: #06021e;
-            --p-001-t-700: #0a022c;
-            --p-001-t-600: #06021e;
-            --p-001-t-500: #10044a;
-            --p-001-t-400: #40366e;
-            --p-001-t-300: #70668f;
-            --p-001-t-200: #9f9bb7;
-            --p-001-t-100: #cfccda;
-            /* P2 Tints */
-            --p-002-t-800: #5f0e28;
-            --p-002-t-700: #8f153c;
-            --p-002-t-600: #be1c50;
-            --p-002-t-500: #ee2364;
-            --p-002-t-400: #f14f83;
-            --p-002-t-300: #f36593;
-            --p-002-t-200: #f8a7c1;
-            --p-002-t-100: #fcd3e0;
-            /* P3 Tints */
-            --p-003-t-800: #00475c;
-            --p-003-t-700: #006a89;
-            --p-003-t-600: #008eb7;
-            --p-003-t-500: #00b1e5;
-            --p-003-t-400: #33c1ea;
-            --p-003-t-300: #66d0ef;
-            --p-003-t-200: #99e0f5;
-            --p-003-t-100: #cceffa;
-            /* P4 Tints */
-            --p-004-t-800: #615e04;
-            --p-004-t-700: #918d07;
-            --p-004-t-600: #c2bc09;
-            --p-004-t-500: #f2eb0b;
-            --p-004-t-400: #f5ef3c;
-            --p-004-t-300: #f7f36d;
-            --p-004-t-200: #faf79d;
-            --p-004-t-100: #fcfbce;
-    
-            /* Logos */
-            --logo-path: url('images/logo.svg');
-            --logo-dark-path: url('images/logo-dark.svg');
-            --logo-light-path: url('images/logo-light.svg');
-            --emblem-path: url('images/emblem.svg');
-            --emblem-dark-path: url('images/emblem-dark.svg');
-            --emblem-light-path: url('images/emblem-light.svg');
-    
-            /* Graphic Elements */
-            --trophy-asset-path: url('images/trophy.svg');
-            --trophy-dark-asset-path: url('images/trophy-dark.svg');
-            --trophy-light-asset-path: url('images/trophy-light.svg');
-            --sub-asset-1-svg-path: url('images/sub-asset-1.svg');
-            --sub-asset-1-png-path: url('images/sub-asset-1.png');
-            --sub-asset-1-jpg-path: url('images/sub-asset-1.jpg');
+    /* Primary Colours */
+    --p-001: #10044A;
+    --p-002: #EE2364;
+    --p-003: #00B1E5;
+    --p-004: #F2EB0B;
+    --p-005: #2B69BF;
+    --p-006: #2B69BF;
+    --p-007: #271B5B;
+    /* Neutral Colours */
+    --n-100: #0d1635;
+    --n-90: #232b47;
+    --n-80: #3d455d;
+    --n-60: #6e7386;
+    --n-40: #9ea2ae;
+    --n-20: #cfd0d7;
+    --n-10: #e7e8eb;
+    --n-5: #f3f3f5;
+    --n-black: #000000;
+    --n-white: #fff;
+    /* Primary Tints */
+    --p-001-t-800: #06021e;
+    --p-001-t-700: #0a022c;
+    --p-001-t-600: #06021e;
+    --p-001-t-500: #10044a;
+    --p-001-t-400: #40366e;
+    --p-001-t-300: #70668f;
+    --p-001-t-200: #9f9bb7;
+    --p-001-t-100: #cfccda;
+    /* P2 Tints */
+    --p-002-t-800: #5f0e28;
+    --p-002-t-700: #8f153c;
+    --p-002-t-600: #be1c50;
+    --p-002-t-500: #ee2364;
+    --p-002-t-400: #f14f83;
+    --p-002-t-300: #f36593;
+    --p-002-t-200: #f8a7c1;
+    --p-002-t-100: #fcd3e0;
+    /* P3 Tints */
+    --p-003-t-800: #00475c;
+    --p-003-t-700: #006a89;
+    --p-003-t-600: #008eb7;
+    --p-003-t-500: #00b1e5;
+    --p-003-t-400: #33c1ea;
+    --p-003-t-300: #66d0ef;
+    --p-003-t-200: #99e0f5;
+    --p-003-t-100: #cceffa;
+    /* P4 Tints */
+    --p-004-t-800: #615e04;
+    --p-004-t-700: #918d07;
+    --p-004-t-600: #c2bc09;
+    --p-004-t-500: #f2eb0b;
+    --p-004-t-400: #f5ef3c;
+    --p-004-t-300: #f7f36d;
+    --p-004-t-200: #faf79d;
+    --p-004-t-100: #fcfbce;
 
-            --sub-asset-2-svg-path: url('images/sub-asset-2.svg');
-            --sub-asset-2-png-path: url('images/sub-asset-2.png');
-            --sub-asset-2-jpg-path: url('images/sub-asset-2.jpg');
+    /* Logos */
+    --logo-path: url('images/logo.svg');
+    --logo-dark-path: url('images/logo-dark.svg');
+    --logo-light-path: url('images/logo-light.svg');
+    --emblem-path: url('images/emblem.svg');
+    --emblem-dark-path: url('images/emblem-dark.svg');
+    --emblem-light-path: url('images/emblem-light.svg');
 
-            --sub-asset-3-svg-path: url('images/sub-asset-3.svg');
-            --sub-asset-3-png-path: url('images/sub-asset-3.png');
-            --sub-asset-3-jpg-path: url('images/sub-asset-3.jpg');
-        }
-    
-        .T20-IRE {
-            --team-primary-colour: #30742D;
-            --team-secondary-colour: #06215C;
-            --sub-asset-team-flag-path: url('images/ire.svg');
-            --sub-asset-team-logo-path: url('images/ire.png');
-            --sub-asset-team-sticker-path: url('images/ire.jpg');
-        }
-    
-        .T20-AUS {
-            --team-primary-colour: #0B661E;
-            --team-secondary-colour: #FFD500;
-            --sub-asset-team-flag-path: url('images/aus.svg');
-            --sub-asset-team-logo-path: url('images/aus.png');
-            --sub-asset-team-sticker-path: url('images/aus.jpg');
-        }
-    
-        .T20-SCOT {
-            --team-primary-colour: #1D2338;
-            --team-secondary-colour: #84A2E1;
-            --sub-asset-team-flag-path: url('images/sco.svg');
-            --sub-asset-team-logo-path: url('images/sco.png');
-            --sub-asset-team-sticker-path: url('images/sco.jpg');
-        }
-    
-        .T20-SA {
-            --team-primary-colour: #0B5425;
-            --team-secondary-colour: #F5AB00;
-            --sub-asset-team-flag-path: url('images/sa.svg');
-            --sub-asset-team-logo-path: url('images/sa.png');
-            --sub-asset-team-sticker-path: url('images/sa.jpg');
-        }
-    
-        .T20-WI {
-            --team-primary-colour: #7D1041;
-            --team-secondary-colour: #E2DA14;
-            --sub-asset-team-flag-path: url('images/wi.svg');
-            --sub-asset-team-logo-path: url('images/wi.png');
-            --sub-asset-team-sticker-path: url('images/wi.jpg');
-        }
-        
-        .T20-UAE {
-            --team-primary-colour: #CE963F;
-            --team-secondary-colour: #FFFFFF;
-            --sub-asset-team-flag-path: url('images/uae.svg');
-            --sub-asset-team-logo-path: url('images/uae.png');
-            --sub-asset-team-sticker-path: url('images/uae.jpg');
-        }
-    
-        .T20-SL {
-            --team-primary-colour: #1B2E96;
-            --team-secondary-colour: #FFC500;
-            --sub-asset-team-flag-path: url('images/sl.svg');
-            --sub-asset-team-logo-path: url('images/sl.png');
-            --sub-asset-team-sticker-path: url('images/sl.jpg');
-        }
+    /* Graphic Elements */
+    --trophy-asset-path: url('images/trophy.svg');
+    --trophy-dark-asset-path: url('images/trophy-dark.svg');
+    --trophy-light-asset-path: url('images/trophy-light.svg');
+    --sub-asset-1-svg-path: url('images/sub-asset-1.svg');
+    --sub-asset-1-png-path: url('images/sub-asset-1.png');
+    --sub-asset-1-jpg-path: url('images/sub-asset-1.jpg');
 
-        .T20-BAN {
-            --team-primary-colour: #00644C;
-            --team-secondary-colour: #F91A22;
-            --sub-asset-team-flag-path: url('images/ban.svg');
-            --sub-asset-team-logo-path: url('images/ban.png');
-            --sub-asset-team-sticker-path: url('images/ban.jpg');
-        }
-    
-        .T20-NZ {
-            --team-primary-colour: #1F1F1F;
-            --team-secondary-colour: #E8EBED;
-            --sub-asset-team-flag-path: url('images/nz.svg');
-            --sub-asset-team-logo-path: url('images/nz.png');
-            --sub-asset-team-sticker-path: url('images/nz.jpg');
-        }
-    
-        .T20-ZIM {
-            --team-primary-colour: #CD151C;
-            --team-secondary-colour: #F8B526;
-            --sub-asset-team-flag-path: url('images/zim.svg');
-            --sub-asset-team-logo-path: url('images/zim.png');
-            --sub-asset-team-sticker-path: url('images/zim.jpg');
-        }
-    
-        .T20-PAK {
-            --team-primary-colour: #206500;
-            --team-secondary-colour: #70E101;
-            --sub-asset-team-flag-path: url('images/pak.svg');
-            --sub-asset-team-logo-path: url('images/pak.png');
-            --sub-asset-team-sticker-path: url('images/pak.jpg');
-        }
-    
-        .T20-IND {
-            --team-primary-colour: #0057AF;
-            --team-secondary-colour: #FF5500;
-            --sub-asset-team-flag-path: url('images/ind.svg');
-            --sub-asset-team-logo-path: url('images/ind.png');
-            --sub-asset-team-sticker-path: url('images/ind.jpg');
-        }
-    
-        .T20-NED {
-            --team-primary-colour: #EF6C00;
-            --team-secondary-colour: #212649;
-            --sub-asset-team-flag-path: url('images/ned.svg');
-            --sub-asset-team-logo-path: url('images/ned.png');
-            --sub-asset-team-sticker-path: url('images/ned.jpg');
-        }
-    
-        .T20-AFG {
-            --team-primary-colour: #0954AF;
-            --team-secondary-colour: #FC0011;
-            --sub-asset-team-flag-path: url('images/afg.svg');
-            --sub-asset-team-logo-path: url('images/afg.png');
-            --sub-asset-team-sticker-path: url('images/afg.jpg');
-        }
-    
-        .T20-NAM {
-            --team-primary-colour: #174CC5;
-            --team-secondary-colour: #F81D00;
-            --sub-asset-team-flag-path: url('images/nam.svg');
-            --sub-asset-team-logo-path: url('images/nam.png');
-            --sub-asset-team-sticker-path: url('images/nam.jpg');
-        }
-    
-        .T20-ENG {
-            --team-primary-colour: #04064D;
-            --team-secondary-colour: #FE1448;
-            --sub-asset-team-flag-path: url('images/eng.svg');
-            --sub-asset-team-logo-path: url('images/eng.png');
-            --sub-asset-team-sticker-path: url('images/eng.jpg');
-        }
+    --sub-asset-2-svg-path: url('images/sub-asset-2.svg');
+    --sub-asset-2-png-path: url('images/sub-asset-2.png');
+    --sub-asset-2-jpg-path: url('images/sub-asset-2.jpg');
 
-        .T20-GA1 {
-            --team-primary-colour: #;
-            --team-secondary-colour: #;
-            --sub-asset-team-flag-path: url('images/ga1.svg');
-            --sub-asset-team-logo-path: url('images/ga1.png');
-            --sub-asset-team-sticker-path: url('images/ga1.jpg');
-        }
-        
-        .T20-GA2 {
-            --team-primary-colour: #;
-            --team-secondary-colour: #;
-            --sub-asset-team-flag-path: url('images/ga2.svg');
-            --sub-asset-team-logo-path: url('images/ga2.png');
-            --sub-asset-team-sticker-path: url('images/ga2.jpg');
-        }
-        
-        .T20-GB1 {
-            --team-primary-colour: #;
-            --team-secondary-colour: #;
-            --sub-asset-team-flag-path: url('images/gb1.svg');
-            --sub-asset-team-logo-path: url('images/gb1.png');
-            --sub-asset-team-sticker-path: url('images/gb1.jpg');
-        }
+    --sub-asset-3-svg-path: url('images/sub-asset-3.svg');
+    --sub-asset-3-png-path: url('images/sub-asset-3.png');
+    --sub-asset-3-jpg-path: url('images/sub-asset-3.jpg');
+}
 
-        .T20-GB2 {
-            --team-primary-colour: #;
-            --team-secondary-colour: #;
-            --sub-asset-team-flag-path: url('images/gb2.svg');
-            --sub-asset-team-logo-path: url('images/gb2.png');
-            --sub-asset-team-sticker-path: url('images/gb2.jpg');
-        }
-    
-        .T20-Q1 {
-            --team-primary-colour: #;
-            --team-secondary-colour: #;
-            --sub-asset-team-flag-path: url('images/q1.svg');
-            --sub-asset-team-logo-path: url('images/q1.png');
-            --sub-asset-team-sticker-path: url('images/q1.jpg');
-        }
-    
-        .T20-Q2 {
-            --team-primary-colour: #;
-            --team-secondary-colour: #;
-            --sub-asset-team-flag-path: url('images/q2.svg');
-            --sub-asset-team-logo-path: url('images/q2.png');
-            --sub-asset-team-sticker-path: url('images/q2.jpg');
-        }
-    
-        .T20-Q3 {
-            --team-primary-colour: #;
-            --team-secondary-colour: #;
-            --sub-asset-team-flag-path: url('images/q3.svg');
-            --sub-asset-team-logo-path: url('images/q3.png');
-            --sub-asset-team-sticker-path: url('images/q3.jpg');
-        }
-    
-        .T20-Q4 {
-            --team-primary-colour: #;
-            --team-secondary-colour: #;
-            --sub-asset-team-flag-path: url('images/q4.svg');
-            --sub-asset-team-logo-path: url('images/q4.png');
-            --sub-asset-team-sticker-path: url('images/q4.jpg');
-        }
+.t20-ire {
+    --team-primary-colour: #30742D;
+    --team-secondary-colour: #06215C;
+    --sub-asset-team-flag-path: url('images/ire.svg');
+    --sub-asset-team-logo-path: url('images/ire.png');
+    --sub-asset-team-sticker-path: url('images/ire.jpg');
+}
+
+.t20-aus {
+    --team-primary-colour: #0B661E;
+    --team-secondary-colour: #FFD500;
+    --sub-asset-team-flag-path: url('images/aus.svg');
+    --sub-asset-team-logo-path: url('images/aus.png');
+    --sub-asset-team-sticker-path: url('images/aus.jpg');
+}
+
+.t20-scot {
+    --team-primary-colour: #1D2338;
+    --team-secondary-colour: #84A2E1;
+    --sub-asset-team-flag-path: url('images/sco.svg');
+    --sub-asset-team-logo-path: url('images/sco.png');
+    --sub-asset-team-sticker-path: url('images/sco.jpg');
+}
+
+.t20-sa {
+    --team-primary-colour: #0B5425;
+    --team-secondary-colour: #F5AB00;
+    --sub-asset-team-flag-path: url('images/sa.svg');
+    --sub-asset-team-logo-path: url('images/sa.png');
+    --sub-asset-team-sticker-path: url('images/sa.jpg');
+}
+
+.t20-wi {
+    --team-primary-colour: #7D1041;
+    --team-secondary-colour: #E2DA14;
+    --sub-asset-team-flag-path: url('images/wi.svg');
+    --sub-asset-team-logo-path: url('images/wi.png');
+    --sub-asset-team-sticker-path: url('images/wi.jpg');
+}
+
+.t20-uae {
+    --team-primary-colour: #CE963F;
+    --team-secondary-colour: #FFFFFF;
+    --sub-asset-team-flag-path: url('images/uae.svg');
+    --sub-asset-team-logo-path: url('images/uae.png');
+    --sub-asset-team-sticker-path: url('images/uae.jpg');
+}
+
+.t20-sl {
+    --team-primary-colour: #1B2E96;
+    --team-secondary-colour: #FFC500;
+    --sub-asset-team-flag-path: url('images/sl.svg');
+    --sub-asset-team-logo-path: url('images/sl.png');
+    --sub-asset-team-sticker-path: url('images/sl.jpg');
+}
+
+.t20-ban {
+    --team-primary-colour: #00644C;
+    --team-secondary-colour: #F91A22;
+    --sub-asset-team-flag-path: url('images/ban.svg');
+    --sub-asset-team-logo-path: url('images/ban.png');
+    --sub-asset-team-sticker-path: url('images/ban.jpg');
+}
+
+.t20-nz {
+    --team-primary-colour: #1F1F1F;
+    --team-secondary-colour: #E8EBED;
+    --sub-asset-team-flag-path: url('images/nz.svg');
+    --sub-asset-team-logo-path: url('images/nz.png');
+    --sub-asset-team-sticker-path: url('images/nz.jpg');
+}
+
+.t20-zim {
+    --team-primary-colour: #CD151C;
+    --team-secondary-colour: #F8B526;
+    --sub-asset-team-flag-path: url('images/zim.svg');
+    --sub-asset-team-logo-path: url('images/zim.png');
+    --sub-asset-team-sticker-path: url('images/zim.jpg');
+}
+
+.t20-pak {
+    --team-primary-colour: #206500;
+    --team-secondary-colour: #70E101;
+    --sub-asset-team-flag-path: url('images/pak.svg');
+    --sub-asset-team-logo-path: url('images/pak.png');
+    --sub-asset-team-sticker-path: url('images/pak.jpg');
+}
+
+.t20-ind {
+    --team-primary-colour: #0057AF;
+    --team-secondary-colour: #FF5500;
+    --sub-asset-team-flag-path: url('images/ind.svg');
+    --sub-asset-team-logo-path: url('images/ind.png');
+    --sub-asset-team-sticker-path: url('images/ind.jpg');
+}
+
+.t20-ned {
+    --team-primary-colour: #EF6C00;
+    --team-secondary-colour: #212649;
+    --sub-asset-team-flag-path: url('images/ned.svg');
+    --sub-asset-team-logo-path: url('images/ned.png');
+    --sub-asset-team-sticker-path: url('images/ned.jpg');
+}
+
+.t20-afg {
+    --team-primary-colour: #0954AF;
+    --team-secondary-colour: #FC0011;
+    --sub-asset-team-flag-path: url('images/afg.svg');
+    --sub-asset-team-logo-path: url('images/afg.png');
+    --sub-asset-team-sticker-path: url('images/afg.jpg');
+}
+
+.t20-nam {
+    --team-primary-colour: #174CC5;
+    --team-secondary-colour: #F81D00;
+    --sub-asset-team-flag-path: url('images/nam.svg');
+    --sub-asset-team-logo-path: url('images/nam.png');
+    --sub-asset-team-sticker-path: url('images/nam.jpg');
+}
+
+.t20-eng {
+    --team-primary-colour: #04064D;
+    --team-secondary-colour: #FE1448;
+    --sub-asset-team-flag-path: url('images/eng.svg');
+    --sub-asset-team-logo-path: url('images/eng.png');
+    --sub-asset-team-sticker-path: url('images/eng.jpg');
+}
