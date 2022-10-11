@@ -1,0 +1,123 @@
+*{box-sizing: border-box;}
+
+table, tr, td {border-collapse: collapse;}
+table {width: 100%;}
+
+.img-container {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6rem;
+    max-height: 18.75rem /* 300px */;
+}
+
+.centered-left, .centered-right {position: absolute;bottom: 2rem/* 20px */;}
+.centered-left {left: 2rem/*25px*/;}
+.centered-right {right: 2rem/*25px*/;}
+
+/* Colours */
+.slb-blue,.slb-hover-blue:hover{color:#fff!important;background-color:#003366!important}
+.smith-green,.smith-hover-green:hover{color:#fff!important;background-color:#006e38!important}
+
+.t20-ire,
+.t20-hover-ire:hover {
+    color: #0081E9 !important;
+    background-color: #FFFF3C !important
+}
+
+.t20-aus,
+.t20-hover-aus:hover {
+    color: #EF1B23 !important;
+    background-color: #00008B !important
+}
+
+.t20-scot,
+.t20-hover-scot:hover {
+    color: #fff !important;
+    background-color: #4752a1 !important
+}
+
+.t20-sa,
+.t20-hover-sa:hover {
+    color: #B3A123 !important;
+    background-color: #2E0854 !important
+}
+
+.t20-wi,
+.t20-hover-wi:hover {
+    color: #fff !important;
+    background-color: #7fd2d8 !important
+}
+
+.t20-uae,
+.t20-hover-uae:hover {
+    color: #D1AB3E !important;
+    background-color: #004BA0 !important
+}
+
+.t20-sl,
+.t20-hover-sl:hover {
+    color: #ED1B24 !important;
+    background-color: #DCDDDF !important
+}
+
+.t20-ban,
+.t20-hover-ban:hover {
+    color: #2B2A29 !important;
+    background-color: #EC1C24 !important
+}
+
+.t20-nz,
+.t20-hover-nz:hover {
+    color: #254AA5 !important;
+    background-color: #CBA92B !important
+}
+
+.t20-zim,
+.t20-hover-zim:hover {
+    color: #000000 !important;
+    background-color: #FF822A !important
+}
+
+.t20-pak,
+.t20-hover-pak:hover {
+    color: #000000 !important;
+    background-color: #FF822A !important
+}
+
+.t20-ind,
+.t20-hover-ind:hover {
+    color: #000000 !important;
+    background-color: #FF822A !important
+}
+
+.t20-ned,
+.t20-hover-ned:hover {
+    color: #000000 !important;
+    background-color: #FF822A !important
+}
+
+.t20-afg,
+.t20-hover-afg:hover {
+    color: #000000 !important;
+    background-color: #FF822A !important
+}
+
+.t20-nam,
+.t20-hover-nam:hover {
+    color: #000000 !important;
+    background-color: #FF822A !important
+}
+
+.t20-eng,
+.t20-hover-eng:hover {
+    color: #000000 !important;
+    background-color: #FF822A !important
+}

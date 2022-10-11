@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cricket Carnival</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/w3.css">
+    <link rel="stylesheet" href="/css/asset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="w3-light-grey">
+    <!-- Top container -->
+    <div class="w3-bar w3-top slb-blue w3-large" style="z-index:4">
+        <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>&nbsp;Menu</button>
+        <span class="w3-bar-item w3-left">T20 World Cup 2022</span>
+        <span class="w3-bar-item w3-right">#Cricket Carnival</span>
+    </div>
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+        <div class="w3-container w3-row">
+            <div class="w3-col s4">
+                <img src="/images/avatar1.png" class="w3-circle w3-margin-right" style="width:46px">
+            </div>
+            <div class="w3-col s8 w3-bar">
+                <span><strong>Welcome</strong></span><br>
+                <!-- <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+                <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i></a>
+                <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cog"></i></a> -->
+            </div>
+        </div>
+        <hr>
+        <div class="w3-container">
+            <h5>Dashboard</h5>
+        </div>
+        <div class="w3-bar-block">
+            <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>&nbsp;Close Menu</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-users fa-fw"></i>&nbsp;Overview</a>
+            <a href="main.html" class="w3-bar-item w3-button w3-padding" target="_new"><i class="fa fa fa-line-chart fa-fw"></i>&nbsp;Score Card</a>
+            <a href="/html/fame.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-street-view fa-fw"></i>&nbsp;Hall of fame</a>
+            <a href="/html/rules.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-book fa-fw"></i>&nbsp;Rules</a>
+            <a href="/html/about.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-sitemap fa-fw"></i>&nbsp;Team</a><br><br>
+            <!-- <a href="https://forms.office.com/r/gSLtniXE93" class="w3-bar-item w3-button w3-yellow w3-padding" target="_new" title='Click here to select your team for Round-5.'>
+                "https://apps.powerapps.com/play/154d667e-93da-4e31-9874-1b597a4b00ad?tenantId=41ff26dc-250f-4b13-8981-739be8610c21&skipAppMetadata=true&hidenavbar=true"
+                <div class="w3-text-pink w3-hover-text-deep-purple w3-center" style="font-size: 4rem;">
+                    <strong>Click here to select for Round5</strong>
+                </div>
+            </a> -->
+
+            <a href="#" class="w3-bar-item w3-button w3-yellow w3-padding">
+                <div class="w3-text-cyan w3-hover-text-deep-blue w3-center" style="font-size: 2rem;">
+                    <strong>The trick is to never lose hope!</strong>
+                </div>
+            </a>
+            <br>
+            <a href="#" class="w3-bar-item w3-button w3-red w3-padding">
+                <div class="w3-text-white w3-hover-text-deep-blue w3-center" style="font-size: 2rem;">
+                    <strong>Round-1 you can win upto 10 points!</strong>
+                </div>
+            </a>
+
+            <!-- <br>
+            <a href="#" class="w3-bar-item w3-button w3-blue w3-padding">
+                <div class="w3-text-white w3-hover-text-deep-blue w3-center" style="font-size: 2rem;">
+                    <strong>Feedback!</strong>
+                </div>
+            </a> -->
+        </div>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+        <!-- Header -->
+        <header class="w3-container">
+            <div class="img-container">
+                <!-- <img class="w3-image" src="/images/stadium_wide.png" alt="London" style="width:100%;min-height:200px;max-height:300px;"> -->
+                <img class="w3-image" src="/images/Environment_Banner.png" alt="adelaide-oval" style="width:100%;min-height:18.75rem;max-height:31.25rem;">
+
+                <div class="centered-left">
+                    <div id="img_centered_teamA"><img src="/images/logo/sl.png"></div>
+                </div>
+                <div class="centered">
+                    <strong>#</strong><strong id="img_centered_text">CRICKET CARNIVAL</strong>
+                </div>
+                <div class="centered-right">
+                    <div id="img_centered_teamB"><img src="/images/logo/nam.png"></div>
+                </div>
+            </div>
+            <h5><b><i class="fa fa-dashboard"></i> Dashboard</b></h5>
+        </header>
+
+        <!--Temp Notice-->
+        <!--div class="w3-container w3-red w3-text-white">
+            <h3>ROUND-4 entries being updated... Thanks for your patience</h3>
+        </div>
+        <br-->
+        <div class="w3-row-padding">
+            <!-- Individual top ranking -->
+            <div class="w3-quarter">
+                <h5>Individual Rankings as of ( <span id="cur_date1"></span> )</h5>
+            </div>
+            <div class="w3-quarter">
+                <h5>Group Rankings</h5>
+            </div>
+            <!-- Rankings and Support count -->
+            <div class="w3-quarter">
+                <h5>Support Breakdown</h5>
+            </div>
+            <!-- Team A bar chart -->
+            <div class="w3-quarter" id="choose_round"></div>
+        </div>
+
+        <!-- First Team Row -->
+        <div class="w3-row-padding w3-margin-bottom">
+            <!-- Individual ranking -->
+            <div class="w3-quarter" id="top_player_ranks_group"></div>
+
+            <!-- Team ranking -->
+            <div class="w3-quarter">
+                <div class="w3-quarter" id="top_team_ranks" style="width:100%;max-width:500px;"></div>
+            </div>
+
+            <!-- Rankings and Support count -->
+            <div class="w3-quarter" id="pie_chart_vs">
+                <div class="w3-half" id="div_team_A">
+                    <div class="w3-container ipl-csk w3-padding" id="choose_teamA_container">
+                        <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+                        <div class="w3-right" id="choose_teamA_count">0</div>
+                        <div class="w3-clear"></div>
+                        <div id="choose_teamA">TEAM A</div>
+                    </div>
+                </div>
+                <div class="w3-half" id="div_team_B">
+                    <div class="w3-container ipl-kkr w3-padding" id="choose_teamB_container">
+                        <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+                        <div class="w3-right" id="choose_teamB_count">0</div>
+                        <div class="w3-clear"></div>
+                        <div id="choose_teamB">TEAM B</div>
+                    </div>
+                </div>
+                <div id="choose_pie_chart" style="width:100%;max-width:500px;overflow: auto;"></div>
+            </div>
+
+            <!-- Team A bar chart -->
+            <div class="w3-quarter" id="bar_chart_vs">
+                <div id="myPlot_bar_1" style="width:100%;"></div>
+            </div>
+        </div>
+        
+        <!-- Second Team Row -->
+        <div class="w3-row-padding w3-margin-bottom">
+            <div class="w3-quarter">
+                <!-- <div><h5>Support for League Stage (R5)</h5></div> -->
+                <!-- <img class="w3-image" src="/images/Environment_Banner.png" alt="team order"> -->
+            </div>
+            
+            <div class="w3-quarter">
+                <div id="myPlot_bar_2" style="width:100%;"></div>
+            </div>
+
+            <div class="w3-quarter">
+                <div id="myPlot_bar_3" style="width:100%;"></div>
+            </div>
+
+            <div class="w3-quarter">
+                <div id="final_winner_support_pie" style="width:100%;"></div>
+            </div>
+        </div>
+
+        <!-- Third Team Row -->
+        <div class="w3-row-padding w3-margin-bottom">
+            <div class="w3-quarter">
+                <div class="w3-margin-bottom" id='tr_pie_1'></div>
+                <div id='tr_pie_2'></div>
+            </div>
+            
+            <div class="w3-quarter">
+                <div class="w3-margin-bottom" id='tr_pie_3'></div>
+                <div id='tr_pie_4'></div>
+            </div>
+
+            <div class="w3-half">
+                <div id='team_line_chart'></div>
+            </div>
+        </div>
+        
+        <!--Disclaimer-->
+        <div class="w3-container w3-padding-5 w3-dark-gray w3-tiny w3-text-light-gray">
+            <!-- <p>*Abbreviations - Elec: "Electrical Department", RP: "Reservoir Performance", WEC: "Well Construction", WPRS: "Well Production Systems", Rest of STSI: ("Modelling & Simulations" + "TechCom" + "A2 & Cross Segment Team" + "Others")</p> -->
+        </div>
+        <!-- Detailed Score Card -->
+        <div class="w3-panel w3-margin-bottom">
+            <div class="w3-row-padding" style="margin:0 -16px">                
+                <div class="w3-theme-d2">
+                    <h5>Score Card</h5>
+                    <iframe src="main.html" title="MainBoard" style="width:100%;height:600px;border: 0;"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-5 w3-dark-grey w3-center">
+            <p>The best way to predict the future is to create it</p>
+        </footer>
+        <div class="w3-container w3-padding-5 w3-grey w3-tiny w3-text-light-gray">
+            <p>**Site best viewed in 1280 x 1024 or higher screen resolution.</p>
+            <p>Disclaimer: We do not claim copyrights or ownership of any images shown on this website and they belong to thier respective creators and owners.</p>
+        </div>
+    </div>
+
+    <!-- !END OF PAGE CONTENT! -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="/src/js/data.js"></script>
+    <script src="/src/js/other_functions.js"></script>
+    <script src="/src/js/data_processing.js"></script>
+    <script src="/src/js/index.js"></script>
+</body>
+
+</html>

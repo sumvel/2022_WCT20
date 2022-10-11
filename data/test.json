@@ -1,0 +1,37 @@
+{
+  "players": [
+    {
+      "name": "Suman V",
+      "team": "Bits",
+      "full_team": [],
+      "picks": [
+        "CSK",
+        "MI",
+        "PBKS",
+        "LSG"
+      ]
+    },
+    {
+      "name": "Dharmendra Y",
+      "team": "Automation",
+      "full_team": [],
+      "picks": [
+        "CSK",
+        "MI",
+        "PBKS",
+        "LSG"
+      ]
+    },
+    {
+      "name": "Bhargavi J",
+      "team": "Cementing",
+      "full_team": [],
+      "picks": [
+        "CSK",
+        "MI",
+        "PBKS",
+        "LSG"
+      ]
+    }
+  ]
+}
