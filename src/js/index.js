@@ -266,8 +266,8 @@ function update_match_info() {
         p = parseInt(matnum) - 1;
     }
 
-    document.getElementById("img_centered_teamA").innerHTML = "<img src='/images/logo/" + team1[p].toLowerCase() + ".png'>";
-    document.getElementById("img_centered_teamB").innerHTML = "<img src='/images/logo/" + team2[p].toLowerCase() + ".png'>";
+    document.getElementById("img_centered_teamA").innerHTML = "<img src='images/logo/" + team1[p].toLowerCase() + ".png'>";
+    document.getElementById("img_centered_teamB").innerHTML = "<img src='images/logo/" + team2[p].toLowerCase() + ".png'>";
 
     document.getElementById("choose_teamA").innerHTML = teams_list_st[teams_list_st.indexOf(team1[p])];
     document.getElementById("choose_teamB").innerHTML = teams_list_st[teams_list_st.indexOf(team2[p])];
@@ -314,8 +314,8 @@ function update_match_info() {
     console.log(dat[dat.length - 1].split("-").shift());
 
     if (Number(date.split("-").shift()) > Number(dat[dat.length - 1].split("-").shift()) && p == 69) {
-        document.getElementById("img_centered_teamA").innerHTML = "<img src='/images/logo/gt.png'>";
-        document.getElementById("img_centered_teamB").innerHTML = "<img src='/images/q.png'>";
+        document.getElementById("img_centered_teamA").innerHTML = "<img src='images/logo/gt.png'>";
+        document.getElementById("img_centered_teamB").innerHTML = "<img src='images/q.png'>";
         document.getElementById("img_centered_text").setAttribute("style", "color:" + IPLcolorsObj.GT + ";");
     }
 };

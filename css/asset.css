@@ -56,218 +56,218 @@
             --p-004-t-100: #fcfbce;
     
             /* Logos */
-            --logo-path: url('/images/logo.svg');
-            --logo-dark-path: url('/images/logo-dark.svg');
-            --logo-light-path: url('/images/logo-light.svg');
-            --emblem-path: url('/images/emblem.svg');
-            --emblem-dark-path: url('/images/emblem-dark.svg');
-            --emblem-light-path: url('/images/emblem-light.svg');
+            --logo-path: url('images/logo.svg');
+            --logo-dark-path: url('images/logo-dark.svg');
+            --logo-light-path: url('images/logo-light.svg');
+            --emblem-path: url('images/emblem.svg');
+            --emblem-dark-path: url('images/emblem-dark.svg');
+            --emblem-light-path: url('images/emblem-light.svg');
     
             /* Graphic Elements */
-            --trophy-asset-path: url('/images/trophy.svg');
-            --trophy-dark-asset-path: url('/images/trophy-dark.svg');
-            --trophy-light-asset-path: url('/images/trophy-light.svg');
-            --sub-asset-1-svg-path: url('/images/sub-asset-1.svg');
-            --sub-asset-1-png-path: url('/images/sub-asset-1.png');
-            --sub-asset-1-jpg-path: url('/images/sub-asset-1.jpg');
+            --trophy-asset-path: url('images/trophy.svg');
+            --trophy-dark-asset-path: url('images/trophy-dark.svg');
+            --trophy-light-asset-path: url('images/trophy-light.svg');
+            --sub-asset-1-svg-path: url('images/sub-asset-1.svg');
+            --sub-asset-1-png-path: url('images/sub-asset-1.png');
+            --sub-asset-1-jpg-path: url('images/sub-asset-1.jpg');
 
-            --sub-asset-2-svg-path: url('/images/sub-asset-2.svg');
-            --sub-asset-2-png-path: url('/images/sub-asset-2.png');
-            --sub-asset-2-jpg-path: url('/images/sub-asset-2.jpg');
+            --sub-asset-2-svg-path: url('images/sub-asset-2.svg');
+            --sub-asset-2-png-path: url('images/sub-asset-2.png');
+            --sub-asset-2-jpg-path: url('images/sub-asset-2.jpg');
 
-            --sub-asset-3-svg-path: url('/images/sub-asset-3.svg');
-            --sub-asset-3-png-path: url('/images/sub-asset-3.png');
-            --sub-asset-3-jpg-path: url('/images/sub-asset-3.jpg');
+            --sub-asset-3-svg-path: url('images/sub-asset-3.svg');
+            --sub-asset-3-png-path: url('images/sub-asset-3.png');
+            --sub-asset-3-jpg-path: url('images/sub-asset-3.jpg');
         }
     
         .T20-IRE {
             --team-primary-colour: #30742D;
             --team-secondary-colour: #06215C;
-            --sub-asset-team-flag-path: url('/images/ire.svg');
-            --sub-asset-team-logo-path: url('/images/ire.png');
-            --sub-asset-team-sticker-path: url('/images/ire.jpg');
+            --sub-asset-team-flag-path: url('images/ire.svg');
+            --sub-asset-team-logo-path: url('images/ire.png');
+            --sub-asset-team-sticker-path: url('images/ire.jpg');
         }
     
         .T20-AUS {
             --team-primary-colour: #0B661E;
             --team-secondary-colour: #FFD500;
-            --sub-asset-team-flag-path: url('/images/aus.svg');
-            --sub-asset-team-logo-path: url('/images/aus.png');
-            --sub-asset-team-sticker-path: url('/images/aus.jpg');
+            --sub-asset-team-flag-path: url('images/aus.svg');
+            --sub-asset-team-logo-path: url('images/aus.png');
+            --sub-asset-team-sticker-path: url('images/aus.jpg');
         }
     
         .T20-SCOT {
             --team-primary-colour: #1D2338;
             --team-secondary-colour: #84A2E1;
-            --sub-asset-team-flag-path: url('/images/sco.svg');
-            --sub-asset-team-logo-path: url('/images/sco.png');
-            --sub-asset-team-sticker-path: url('/images/sco.jpg');
+            --sub-asset-team-flag-path: url('images/sco.svg');
+            --sub-asset-team-logo-path: url('images/sco.png');
+            --sub-asset-team-sticker-path: url('images/sco.jpg');
         }
     
         .T20-SA {
             --team-primary-colour: #0B5425;
             --team-secondary-colour: #F5AB00;
-            --sub-asset-team-flag-path: url('/images/sa.svg');
-            --sub-asset-team-logo-path: url('/images/sa.png');
-            --sub-asset-team-sticker-path: url('/images/sa.jpg');
+            --sub-asset-team-flag-path: url('images/sa.svg');
+            --sub-asset-team-logo-path: url('images/sa.png');
+            --sub-asset-team-sticker-path: url('images/sa.jpg');
         }
     
         .T20-WI {
             --team-primary-colour: #7D1041;
             --team-secondary-colour: #E2DA14;
-            --sub-asset-team-flag-path: url('/images/wi.svg');
-            --sub-asset-team-logo-path: url('/images/wi.png');
-            --sub-asset-team-sticker-path: url('/images/wi.jpg');
+            --sub-asset-team-flag-path: url('images/wi.svg');
+            --sub-asset-team-logo-path: url('images/wi.png');
+            --sub-asset-team-sticker-path: url('images/wi.jpg');
         }
         
         .T20-UAE {
             --team-primary-colour: #CE963F;
             --team-secondary-colour: #FFFFFF;
-            --sub-asset-team-flag-path: url('/images/uae.svg');
-            --sub-asset-team-logo-path: url('/images/uae.png');
-            --sub-asset-team-sticker-path: url('/images/uae.jpg');
+            --sub-asset-team-flag-path: url('images/uae.svg');
+            --sub-asset-team-logo-path: url('images/uae.png');
+            --sub-asset-team-sticker-path: url('images/uae.jpg');
         }
     
         .T20-SL {
             --team-primary-colour: #1B2E96;
             --team-secondary-colour: #FFC500;
-            --sub-asset-team-flag-path: url('/images/sl.svg');
-            --sub-asset-team-logo-path: url('/images/sl.png');
-            --sub-asset-team-sticker-path: url('/images/sl.jpg');
+            --sub-asset-team-flag-path: url('images/sl.svg');
+            --sub-asset-team-logo-path: url('images/sl.png');
+            --sub-asset-team-sticker-path: url('images/sl.jpg');
         }
 
         .T20-BAN {
             --team-primary-colour: #00644C;
             --team-secondary-colour: #F91A22;
-            --sub-asset-team-flag-path: url('/images/ban.svg');
-            --sub-asset-team-logo-path: url('/images/ban.png');
-            --sub-asset-team-sticker-path: url('/images/ban.jpg');
+            --sub-asset-team-flag-path: url('images/ban.svg');
+            --sub-asset-team-logo-path: url('images/ban.png');
+            --sub-asset-team-sticker-path: url('images/ban.jpg');
         }
     
         .T20-NZ {
             --team-primary-colour: #1F1F1F;
             --team-secondary-colour: #E8EBED;
-            --sub-asset-team-flag-path: url('/images/nz.svg');
-            --sub-asset-team-logo-path: url('/images/nz.png');
-            --sub-asset-team-sticker-path: url('/images/nz.jpg');
+            --sub-asset-team-flag-path: url('images/nz.svg');
+            --sub-asset-team-logo-path: url('images/nz.png');
+            --sub-asset-team-sticker-path: url('images/nz.jpg');
         }
     
         .T20-ZIM {
             --team-primary-colour: #CD151C;
             --team-secondary-colour: #F8B526;
-            --sub-asset-team-flag-path: url('/images/zim.svg');
-            --sub-asset-team-logo-path: url('/images/zim.png');
-            --sub-asset-team-sticker-path: url('/images/zim.jpg');
+            --sub-asset-team-flag-path: url('images/zim.svg');
+            --sub-asset-team-logo-path: url('images/zim.png');
+            --sub-asset-team-sticker-path: url('images/zim.jpg');
         }
     
         .T20-PAK {
             --team-primary-colour: #206500;
             --team-secondary-colour: #70E101;
-            --sub-asset-team-flag-path: url('/images/pak.svg');
-            --sub-asset-team-logo-path: url('/images/pak.png');
-            --sub-asset-team-sticker-path: url('/images/pak.jpg');
+            --sub-asset-team-flag-path: url('images/pak.svg');
+            --sub-asset-team-logo-path: url('images/pak.png');
+            --sub-asset-team-sticker-path: url('images/pak.jpg');
         }
     
         .T20-IND {
             --team-primary-colour: #0057AF;
             --team-secondary-colour: #FF5500;
-            --sub-asset-team-flag-path: url('/images/ind.svg');
-            --sub-asset-team-logo-path: url('/images/ind.png');
-            --sub-asset-team-sticker-path: url('/images/ind.jpg');
+            --sub-asset-team-flag-path: url('images/ind.svg');
+            --sub-asset-team-logo-path: url('images/ind.png');
+            --sub-asset-team-sticker-path: url('images/ind.jpg');
         }
     
         .T20-NED {
             --team-primary-colour: #EF6C00;
             --team-secondary-colour: #212649;
-            --sub-asset-team-flag-path: url('/images/ned.svg');
-            --sub-asset-team-logo-path: url('/images/ned.png');
-            --sub-asset-team-sticker-path: url('/images/ned.jpg');
+            --sub-asset-team-flag-path: url('images/ned.svg');
+            --sub-asset-team-logo-path: url('images/ned.png');
+            --sub-asset-team-sticker-path: url('images/ned.jpg');
         }
     
         .T20-AFG {
             --team-primary-colour: #0954AF;
             --team-secondary-colour: #FC0011;
-            --sub-asset-team-flag-path: url('/images/afg.svg');
-            --sub-asset-team-logo-path: url('/images/afg.png');
-            --sub-asset-team-sticker-path: url('/images/afg.jpg');
+            --sub-asset-team-flag-path: url('images/afg.svg');
+            --sub-asset-team-logo-path: url('images/afg.png');
+            --sub-asset-team-sticker-path: url('images/afg.jpg');
         }
     
         .T20-NAM {
             --team-primary-colour: #174CC5;
             --team-secondary-colour: #F81D00;
-            --sub-asset-team-flag-path: url('/images/nam.svg');
-            --sub-asset-team-logo-path: url('/images/nam.png');
-            --sub-asset-team-sticker-path: url('/images/nam.jpg');
+            --sub-asset-team-flag-path: url('images/nam.svg');
+            --sub-asset-team-logo-path: url('images/nam.png');
+            --sub-asset-team-sticker-path: url('images/nam.jpg');
         }
     
         .T20-ENG {
             --team-primary-colour: #04064D;
             --team-secondary-colour: #FE1448;
-            --sub-asset-team-flag-path: url('/images/eng.svg');
-            --sub-asset-team-logo-path: url('/images/eng.png');
-            --sub-asset-team-sticker-path: url('/images/eng.jpg');
+            --sub-asset-team-flag-path: url('images/eng.svg');
+            --sub-asset-team-logo-path: url('images/eng.png');
+            --sub-asset-team-sticker-path: url('images/eng.jpg');
         }
 
         .T20-GA1 {
             --team-primary-colour: #;
             --team-secondary-colour: #;
-            --sub-asset-team-flag-path: url('/images/ga1.svg');
-            --sub-asset-team-logo-path: url('/images/ga1.png');
-            --sub-asset-team-sticker-path: url('/images/ga1.jpg');
+            --sub-asset-team-flag-path: url('images/ga1.svg');
+            --sub-asset-team-logo-path: url('images/ga1.png');
+            --sub-asset-team-sticker-path: url('images/ga1.jpg');
         }
         
         .T20-GA2 {
             --team-primary-colour: #;
             --team-secondary-colour: #;
-            --sub-asset-team-flag-path: url('/images/ga2.svg');
-            --sub-asset-team-logo-path: url('/images/ga2.png');
-            --sub-asset-team-sticker-path: url('/images/ga2.jpg');
+            --sub-asset-team-flag-path: url('images/ga2.svg');
+            --sub-asset-team-logo-path: url('images/ga2.png');
+            --sub-asset-team-sticker-path: url('images/ga2.jpg');
         }
         
         .T20-GB1 {
             --team-primary-colour: #;
             --team-secondary-colour: #;
-            --sub-asset-team-flag-path: url('/images/gb1.svg');
-            --sub-asset-team-logo-path: url('/images/gb1.png');
-            --sub-asset-team-sticker-path: url('/images/gb1.jpg');
+            --sub-asset-team-flag-path: url('images/gb1.svg');
+            --sub-asset-team-logo-path: url('images/gb1.png');
+            --sub-asset-team-sticker-path: url('images/gb1.jpg');
         }
 
         .T20-GB2 {
             --team-primary-colour: #;
             --team-secondary-colour: #;
-            --sub-asset-team-flag-path: url('/images/gb2.svg');
-            --sub-asset-team-logo-path: url('/images/gb2.png');
-            --sub-asset-team-sticker-path: url('/images/gb2.jpg');
+            --sub-asset-team-flag-path: url('images/gb2.svg');
+            --sub-asset-team-logo-path: url('images/gb2.png');
+            --sub-asset-team-sticker-path: url('images/gb2.jpg');
         }
     
         .T20-Q1 {
             --team-primary-colour: #;
             --team-secondary-colour: #;
-            --sub-asset-team-flag-path: url('/images/q1.svg');
-            --sub-asset-team-logo-path: url('/images/q1.png');
-            --sub-asset-team-sticker-path: url('/images/q1.jpg');
+            --sub-asset-team-flag-path: url('images/q1.svg');
+            --sub-asset-team-logo-path: url('images/q1.png');
+            --sub-asset-team-sticker-path: url('images/q1.jpg');
         }
     
         .T20-Q2 {
             --team-primary-colour: #;
             --team-secondary-colour: #;
-            --sub-asset-team-flag-path: url('/images/q2.svg');
-            --sub-asset-team-logo-path: url('/images/q2.png');
-            --sub-asset-team-sticker-path: url('/images/q2.jpg');
+            --sub-asset-team-flag-path: url('images/q2.svg');
+            --sub-asset-team-logo-path: url('images/q2.png');
+            --sub-asset-team-sticker-path: url('images/q2.jpg');
         }
     
         .T20-Q3 {
             --team-primary-colour: #;
             --team-secondary-colour: #;
-            --sub-asset-team-flag-path: url('/images/q3.svg');
-            --sub-asset-team-logo-path: url('/images/q3.png');
-            --sub-asset-team-sticker-path: url('/images/q3.jpg');
+            --sub-asset-team-flag-path: url('images/q3.svg');
+            --sub-asset-team-logo-path: url('images/q3.png');
+            --sub-asset-team-sticker-path: url('images/q3.jpg');
         }
     
         .T20-Q4 {
             --team-primary-colour: #;
             --team-secondary-colour: #;
-            --sub-asset-team-flag-path: url('/images/q4.svg');
-            --sub-asset-team-logo-path: url('/images/q4.png');
-            --sub-asset-team-sticker-path: url('/images/q4.jpg');
+            --sub-asset-team-flag-path: url('images/q4.svg');
+            --sub-asset-team-logo-path: url('images/q4.png');
+            --sub-asset-team-sticker-path: url('images/q4.jpg');
         }
