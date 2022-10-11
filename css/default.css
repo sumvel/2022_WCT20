@@ -80,191 +80,51 @@
     --sub-asset-3-jpg-path: url('images/sub-asset-3.jpg');
 }
 
-.t20-ire {
-    --team-primary-colour: #30742D;
-    --team-secondary-colour: #06215C;
-    --sub-asset-team-flag-path: url('images/ire.svg');
-    --sub-asset-team-logo-path: url('images/ire.png');
-    --sub-asset-team-sticker-path: url('images/ire.jpg');
-}
+*{box-sizing:border-box}
+table,td,tr{border-collapse:collapse}
+table{width:100%}
 
-.t20-aus {
-    --team-primary-colour: #0B661E;
-    --team-secondary-colour: #FFD500;
-    --sub-asset-team-flag-path: url('images/aus.svg');
-    --sub-asset-team-logo-path: url('images/aus.png');
-    --sub-asset-team-sticker-path: url('images/aus.jpg');
-}
+.img-container{position:relative;text-align:center;color:#fff}
 
-.t20-scot {
-    --team-primary-colour: #1D2338;
-    --team-secondary-colour: #84A2E1;
-    --sub-asset-team-flag-path: url('images/sco.svg');
-    --sub-asset-team-logo-path: url('images/sco.png');
-    --sub-asset-team-sticker-path: url('images/sco.jpg');
-}
-
-.t20-sa {
-    --team-primary-colour: #0B5425;
-    --team-secondary-colour: #F5AB00;
-    --sub-asset-team-flag-path: url('images/sa.svg');
-    --sub-asset-team-logo-path: url('images/sa.png');
-    --sub-asset-team-sticker-path: url('images/sa.jpg');
-}
-
-.t20-wi {
-    --team-primary-colour: #7D1041;
-    --team-secondary-colour: #E2DA14;
-    --sub-asset-team-flag-path: url('images/wi.svg');
-    --sub-asset-team-logo-path: url('images/wi.png');
-    --sub-asset-team-sticker-path: url('images/wi.jpg');
-}
-
-.t20-uae {
-    --team-primary-colour: #CE963F;
-    --team-secondary-colour: #FFFFFF;
-    --sub-asset-team-flag-path: url('images/uae.svg');
-    --sub-asset-team-logo-path: url('images/uae.png');
-    --sub-asset-team-sticker-path: url('images/uae.jpg');
-}
-
-.t20-sl {
-    --team-primary-colour: #1B2E96;
-    --team-secondary-colour: #FFC500;
-    --sub-asset-team-flag-path: url('images/sl.svg');
-    --sub-asset-team-logo-path: url('images/sl.png');
-    --sub-asset-team-sticker-path: url('images/sl.jpg');
-}
-
-.t20-ban {
-    --team-primary-colour: #00644C;
-    --team-secondary-colour: #F91A22;
-    --sub-asset-team-flag-path: url('images/ban.svg');
-    --sub-asset-team-logo-path: url('images/ban.png');
-    --sub-asset-team-sticker-path: url('images/ban.jpg');
-}
-
-.t20-nz {
-    --team-primary-colour: #1F1F1F;
-    --team-secondary-colour: #E8EBED;
-    --sub-asset-team-flag-path: url('images/nz.svg');
-    --sub-asset-team-logo-path: url('images/nz.png');
-    --sub-asset-team-sticker-path: url('images/nz.jpg');
-}
-
-.t20-zim {
-    --team-primary-colour: #CD151C;
-    --team-secondary-colour: #F8B526;
-    --sub-asset-team-flag-path: url('images/zim.svg');
-    --sub-asset-team-logo-path: url('images/zim.png');
-    --sub-asset-team-sticker-path: url('images/zim.jpg');
-}
-
-.t20-pak {
-    --team-primary-colour: #206500;
-    --team-secondary-colour: #70E101;
-    --sub-asset-team-flag-path: url('images/pak.svg');
-    --sub-asset-team-logo-path: url('images/pak.png');
-    --sub-asset-team-sticker-path: url('images/pak.jpg');
-}
-
-.t20-ind {
-    --team-primary-colour: #0057AF;
-    --team-secondary-colour: #FF5500;
-    --sub-asset-team-flag-path: url('images/ind.svg');
-    --sub-asset-team-logo-path: url('images/ind.png');
-    --sub-asset-team-sticker-path: url('images/ind.jpg');
-}
-
-.t20-ned {
-    --team-primary-colour: #EF6C00;
-    --team-secondary-colour: #212649;
-    --sub-asset-team-flag-path: url('images/ned.svg');
-    --sub-asset-team-logo-path: url('images/ned.png');
-    --sub-asset-team-sticker-path: url('images/ned.jpg');
-}
-
-.t20-afg {
-    --team-primary-colour: #0954AF;
-    --team-secondary-colour: #FC0011;
-    --sub-asset-team-flag-path: url('images/afg.svg');
-    --sub-asset-team-logo-path: url('images/afg.png');
-    --sub-asset-team-sticker-path: url('images/afg.jpg');
-}
-
-.t20-nam {
-    --team-primary-colour: #174CC5;
-    --team-secondary-colour: #F81D00;
-    --sub-asset-team-flag-path: url('images/nam.svg');
-    --sub-asset-team-logo-path: url('images/nam.png');
-    --sub-asset-team-sticker-path: url('images/nam.jpg');
-}
-
-.t20-eng {
-    --team-primary-colour: #04064D;
-    --team-secondary-colour: #FE1448;
-    --sub-asset-team-flag-path: url('images/eng.svg');
-    --sub-asset-team-logo-path: url('images/eng.png');
-    --sub-asset-team-sticker-path: url('images/eng.jpg');
-}
-
-*{box-sizing: border-box;}
-
-table, tr, td {border-collapse: collapse;}
-table {width: 100%;}
-
-.img-container {
-    position: relative;
-    text-align: center;
-    color: #ffffff;
-}
-
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 6rem;
-    max-height: 18.75rem /* 300px */;
-}
-
-.centered-left, .centered-right {position: absolute;bottom: 2rem/* 20px */;}
-.centered-left {left: 2rem/*25px*/;}
-.centered-right {right: 2rem/*25px*/;}
+.centered{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:6rem;max-height:18.75rem}
+.centered-left,.centered-right{position:absolute;bottom:2rem}
+.centered-left{left:2rem}
+.centered-right{right:2rem}
 
 /* Colours */
-.slb-blue,.slb-hover-blue:hover{color:#fff!important;background-color:#003366!important}
+.slb-blue,.slb-hover-blue:hover{color:#fff!important;background-color:#036!important}
 .smith-green,.smith-hover-green:hover{color:#fff!important;background-color:#006e38!important}
 
-.t20-afg,
-.t20-hover-afg:hover,
-.t20-aus,
-.t20-hover-aus:hover,
-.t20-ban,
-.t20-hover-ban:hover,
-.t20-eng,
-.t20-hover-eng:hover,
-.t20-ind,
-.t20-hover-ind:hover,
-.t20-ire,
-.t20-hover-ire:hover,
-.t20-nam,
-.t20-hover-nam:hover,
-.t20-ned,
-.t20-hover-ned:hover,
-.t20-nz,
-.t20-hover-nz:hover,
-.t20-pak,
-.t20-hover-pak:hover,
-.t20-sa,
-.t20-hover-sa:hover,
-.t20-scot,
-.t20-hover-scot:hover,
-.t20-sl,
-.t20-hover-sl:hover,
-.t20-uae,
-.t20-hover-uae:hover,
-.t20-wi,
-.t20-hover-wi:hover,
-.t20-zim,
-.t20-hover-zim:hover {color:var(--team-primary-colour)!important;background-color:var(--team-secondary-colour)!important}
+.t20-ned{--team-primary-colour:#EF6C00;--team-secondary-colour:#212649;--sub-asset-team-flag-path:url('images/ned.svg');--sub-asset-team-logo-path:url('images/ned.png');--sub-asset-team-sticker-path:url('images/ned.jpg')}
+.t20-sl{--team-primary-colour:#1B2E96;--team-secondary-colour:#FFC500;--sub-asset-team-flag-path:url('images/sl.svg');--sub-asset-team-logo-path:url('images/sl.png');--sub-asset-team-sticker-path:url('images/sl.jpg')}
+.t20-uae{--team-primary-colour:#CE963F;--team-secondary-colour:#FFFFFF;--sub-asset-team-flag-path:url('images/uae.svg');--sub-asset-team-logo-path:url('images/uae.png');--sub-asset-team-sticker-path:url('images/uae.jpg')}
+.t20-nam{--team-primary-colour:#174CC5;--team-secondary-colour:#F81D00;--sub-asset-team-flag-path:url('images/nam.svg');--sub-asset-team-logo-path:url('images/nam.png');--sub-asset-team-sticker-path:url('images/nam.jpg')}
+.t20-ire{--team-primary-colour:#30742D;--team-secondary-colour:#06215C;--sub-asset-team-flag-path:url('images/ire.svg');--sub-asset-team-logo-path:url('images/ire.png');--sub-asset-team-sticker-path:url('images/ire.jpg')}
+.t20-wi{--team-primary-colour:#7D1041;--team-secondary-colour:#E2DA14;--sub-asset-team-flag-path:url('images/wi.svg');--sub-asset-team-logo-path:url('images/wi.png');--sub-asset-team-sticker-path:url('images/wi.jpg')}
+.t20-scot{--team-primary-colour:#1D2338;--team-secondary-colour:#84A2E1;--sub-asset-team-flag-path:url('images/sco.svg');--sub-asset-team-logo-path:url('images/sco.png');--sub-asset-team-sticker-path:url('images/sco.jpg')}
+.t20-zim{--team-primary-colour:#CD151C;--team-secondary-colour:#F8B526;--sub-asset-team-flag-path:url('images/zim.svg');--sub-asset-team-logo-path:url('images/zim.png');--sub-asset-team-sticker-path:url('images/zim.jpg')}
+.t20-eng{--team-primary-colour:#04064D;--team-secondary-colour:#FE1448;--sub-asset-team-flag-path:url('images/eng.svg');--sub-asset-team-logo-path:url('images/eng.png');--sub-asset-team-sticker-path:url('images/eng.jpg')}
+.t20-nz{--team-primary-colour:#1F1F1F;--team-secondary-colour:#E8EBED;--sub-asset-team-flag-path:url('images/nz.svg');--sub-asset-team-logo-path:url('images/nz.png');--sub-asset-team-sticker-path:url('images/nz.jpg')}
+.t20-aus{--team-primary-colour:#0B661E;--team-secondary-colour:#FFD500;--sub-asset-team-flag-path:url('images/aus.svg');--sub-asset-team-logo-path:url('images/aus.png');--sub-asset-team-sticker-path:url('images/aus.jpg')}
+.t20-afg{--team-primary-colour:#0954AF;--team-secondary-colour:#FC0011;--sub-asset-team-flag-path:url('images/afg.svg');--sub-asset-team-logo-path:url('images/afg.png');--sub-asset-team-sticker-path:url('images/afg.jpg')}
+.t20-ban{--team-primary-colour:#00644C;--team-secondary-colour:#F91A22;--sub-asset-team-flag-path:url('images/ban.svg');--sub-asset-team-logo-path:url('images/ban.png');--sub-asset-team-sticker-path:url('images/ban.jpg')}
+.t20-pak{--team-primary-colour:#206500;--team-secondary-colour:#70E101;--sub-asset-team-flag-path:url('images/pak.svg');--sub-asset-team-logo-path:url('images/pak.png');--sub-asset-team-sticker-path:url('images/pak.jpg')}
+.t20-ind{--team-primary-colour:#0057AF;--team-secondary-colour:#FF5500;--sub-asset-team-flag-path:url('images/ind.svg');--sub-asset-team-logo-path:url('images/ind.png');--sub-asset-team-sticker-path:url('images/ind.jpg')}
+.t20-sa{--team-primary-colour:#0B5425;--team-secondary-colour:#F5AB00;--sub-asset-team-flag-path:url('images/sa.svg');--sub-asset-team-logo-path:url('images/sa.png');--sub-asset-team-sticker-path:url('images/sa.jpg')}
+
+.t20-ned,.t20-hover-ned:hover,
+.t20-sl,.t20-hover-sl:hover,
+.t20-uae,.t20-hover-uae:hover,
+.t20-nam,.t20-hover-nam:hover,
+.t20-ire,.t20-hover-ire:hover,
+.t20-wi,.t20-hover-wi:hover,
+.t20-scot,.t20-hover-scot:hover,
+.t20-zim,.t20-hover-zim:hover,
+.t20-eng,.t20-hover-eng:hover,
+.t20-nz,.t20-hover-nz:hover,
+.t20-aus,.t20-hover-aus:hover,
+.t20-afg,.t20-hover-afg:hover,
+.t20-ban,.t20-hover-ban:hover,
+.t20-pak,.t20-hover-pak:hover,
+.t20-ind,.t20-hover-ind:hover,
+.t20-sa,.t20-hover-sa:hover {color:var(--team-primary-colour)!important;background-color:var(--team-secondary-colour)!important}
