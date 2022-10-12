@@ -5,6 +5,9 @@
 		<link rel="stylesheet" href="css/w3.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </HEAD>
+  <SCRIPT language = "JavaScript">
+		
+	</SCRIPT>
 	<script src="src/js/data.js"></script>
 	<script src="src/js/other_functions.js"></script>
 	<script src="src/js/data_processing.js"></script>
@@ -28,13 +31,13 @@
 						<a class="w3-bar-item w3-button w3-teal" onclick="home_button()" href="#"><i
 								class="fa fa-refresh w3-margin-right"></i>Reset</a>-->
 						<a class="w3-bar-item w3-button w3-hover-dark-gray" onclick="home_button()" href="#">Home</a>
-						<!--a class="w3-bar-item w3-button w3-hover-dark-gray" onclick="schedule_button()" href="#">Schedule</a-->
+						<a class="w3-bar-item w3-button w3-hover-dark-gray" onclick="schedule_button()" href="#">Schedule</a>
 						<a class="w3-bar-item w3-button w3-hover-dark-gray" onclick="results_button()" href="#">Results</a>				
 						<a class="w3-bar-item w3-button w3-hover-dark-gray" onclick="compare_button()" href="#">Compare</a>
-						<!--<a class="w3-bar-item w3-button w3-hover-dark-gray" onclick="tstats_button()" href="#">IPL Team Stats</a>-->
-						<!--<a class="w3-bar-item w3-button w3-hover-dark-gray" onclick="pstats_button()" href="#">Player Stats</a>-->
-						<!--a class="w3-bar-item w3-button w3-hover-dark-gray" onclick="prediction_button()" href="#">Predictions</a-->
-						<a class="w3-bar-item w3-button w3-hover-dark-gray" onclick="Semi_Final_button()" href="#">Semifinals/Finals</a>
+						<!--<a class="w3-bar-item w3-button w3-hover-dark-gray" onclick="tstats_button()" href="#">IPL Team Stats</a-->
+						<!--a class="w3-bar-item w3-button w3-hover-dark-gray" onclick="pstats_button()" href="#">Player Stats</a-->
+						<a class="w3-bar-item w3-button w3-hover-dark-gray" onclick="prediction_button()" href="#">Predictions</a>
+						<!--a class="w3-bar-item w3-button w3-hover-dark-gray" onclick="Semi_Final_button()" href="#">Semifinals/Finals</a-->
 					</div>
 				</div>
 			</td>
@@ -67,7 +70,7 @@
 		document.getElementById('tstatsdiv').style.display = 'none';
 		document.getElementById('pstatsdiv').style.display = 'none';
 		document.getElementById('preddiv').style.display = 'none';	
-		document.getElementById('semifinaldiv').style.display = 'none';	
+		document.getElementById('semifinaldiv').style.display = 'none';
 	
 	/*=======================*\
 			Ranks
@@ -335,7 +338,7 @@
 		divpre = divpre + "</td><td>" + list_prad2[j] +"</td><td align='center'>"+score_prad2[j] +"</td></tr>";// .toUpperCase() 
 	}
 	divpre = divpre +"</table></td></tr></table>";
-	document.getElementById('preddiv').innerHTML= divpre;
+	document.getElementById('preddiv').innerHTML= divpre; 
 
 		
 	/*=======================*\
@@ -359,7 +362,7 @@
 /*=======================*\
 		Semi Finals
 \*=======================*/
-	divsf ="<table align='center'><tr><th colspan='3'>Select players to compare their selections</th></tr>";
+	/*-divsf ="<table align='center'><tr><th colspan='3'>Select players to compare their selections</th></tr>";
 	divsf = divsf + "<tr><td><select id = 'semi_drop1' size ='1' onchange = 'semi_info()'>";
 	divsf = divsf +"<option value='default'>&nbsp</option>";
 	for(i=0;i<players;i++)
@@ -374,7 +377,7 @@
 		divsf = divsf +"<option value='" + player_list_asc[i] + "'>" + player_list_asc[i].toUpperCase() + "</option>";
 	divsf = divsf +"</td></tr></table><br><div id='semitable'>";
 	document.getElementById('semifinaldiv').innerHTML= divsf;
-	semi_info();
+	semi_info();-*/
 
 
 	</script>	
