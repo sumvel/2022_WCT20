@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Cache-Control" content="no-cache">
     <meta http-equiv="Pragma" content="no-cache">
-
+    
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -15,8 +15,15 @@
 
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/w3.css">
-    <!-- <link rel="stylesheet" href="css/asset.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    .div-right > img {
+        height: 10rem;
+    }
+    .div-left > img{
+        height: 10rem;
+    }
+    </style>
 </head>
 
 <body class="w3-light-grey">
@@ -29,9 +36,7 @@
     <!-- Sidebar/menu -->
     <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
         <div class="w3-container w3-row">
-            <div class="w3-col s4">
-                <img src="images/avatar2.png" class="w3-circle w3-margin-right" style="width:46px">
-            </div>
+            <div class="w3-col s4"><img src="images/avatar2.png" class="w3-circle w3-margin-right" style="width:46px"></div>
             <div class="w3-col s8 w3-bar">
                 <span><strong>Welcome</strong></span><br>
                 <!-- <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
@@ -51,9 +56,9 @@
             <a href="html/rules.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-book fa-fw"></i>&nbsp;Rules</a>
             <a href="html/about.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-sitemap fa-fw"></i>&nbsp;Team</a><br><br>
             <!-- <a href="https://forms.office.com/r/gSLtniXE93" class="w3-bar-item w3-button w3-yellow w3-padding" target="_new" title='Click here to select your team for Round-5.'>
-                "https://apps.powerapps.com/play/154d667e-93da-4e31-9874-1b597a4b00ad?tenantId=41ff26dc-250f-4b13-8981-739be8610c21&skipAppMetadata=true&hidenavbar=true"
-                <div class="w3-text-pink w3-hover-text-deep-purple w3-center" style="font-size: 4rem;">
-                    <strong>Click here to select for Round5</strong>
+                <!-- "https://apps.powerapps.com/play/154d667e-93da-4e31-9874-1b597a4b00ad?tenantId=41ff26dc-250f-4b13-8981-739be8610c21&skipAppMetadata=true&hidenavbar=true"
+                <div class="w3-text-pink w3-hover-text-deep-purple w3-center" style="font-size: 3rem;">
+                    <strong>Click here to select for Round2</strong>
                 </div>
             </a> -->
 
@@ -69,12 +74,12 @@
                 </div>
             </a>
 
-            <!-- <br>
+            <br>
             <a href="#" class="w3-bar-item w3-button w3-blue w3-padding">
                 <div class="w3-text-white w3-hover-text-deep-blue w3-center" style="font-size: 2rem;">
-                    <strong>Feedback!</strong>
+                    <strong>Enjoy!</strong>
                 </div>
-            </a> -->
+            </a>
         </div>
     </nav>
 
@@ -87,29 +92,27 @@
         <!-- Header -->
         <header class="w3-container">
             <div class="img-container">
-                <!-- <img class="w3-image" src="/images/stadium_wide.png" alt="London" style="width:100%;min-height:200px;max-height:300px;"> -->
-                <img class="w3-image" src="images/Environment_Banner.png" alt="adelaide-oval" style="width:100%;min-height:18.75rem;max-height:31.25rem;">
+                <!-- <img class="w3-image" src="images/stadium_wide.png" alt="London" style="width:100%;min-height:200px;max-height:300px;"> -->
+                <img class="w3-image" src="images/Environment_Banner.png" alt="adelaide-oval" style="width:100%;min-height:18rem;max-height:30rem;">
 
                 <div class="centered-left">
-                    <div id="flag_teamA"><img src="images/flag/sl.svg"></div>
-                    <div id="logo_teamA"><img src="images/logo/sl.png"></div>
+                    <div class="div-left" id="flag_teamA"></div>
+                    <div class="div-left" id="logo_teamA"></div>
                 </div>
-                <div class="centered">
-                    <strong>#</strong><strong id="img_centered_text">CRICKET CARNIVAL</strong>
-                </div>
+                <div class="centered"><strong>#</strong><strong id="img_centered_text">CRICKET CARNIVAL</strong></div>
                 <div class="centered-right">
-                    <div id="flag_teamB"><img src="images/flag/nam.svg"></div>
-                    <div id="logo_teamB"><img src="images/logo/nam.png"></div>
+                    <div class="div-right" id="flag_teamB"></div>
+                    <div class="div-right" id="logo_teamB"></div>
                 </div>
             </div>
             <h5><b><i class="fa fa-dashboard"></i> Dashboard</b></h5>
         </header>
 
         <!--Temp Notice-->
-        <!--div class="w3-container w3-red w3-text-white">
-            <h3>ROUND-4 entries being updated... Thanks for your patience</h3>
+        <div class="w3-container w3-red w3-text-white">
+            <h3>Site is being build... Thanks for your patience</h3>
         </div>
-        <br-->
+        <br>
         <div class="w3-row-padding">
             <!-- Individual top ranking -->
             <div class="w3-quarter">
