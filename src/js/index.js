@@ -59,35 +59,50 @@ var ColorClss = Object.keys(ColorsObj).map(function (k) {
 });
 console.log(ColorClss);
 
-function showPieChart(xArray, yArray, ID, chartTile, chartLegend, chartHeight, chartColors /* array eg. [red, blue]*/) {
-    if (!chartLegend || chartLegend == null) { chartLegend = false; }
+function ShowLoadingSpinner() {
+    try {
+        document.getElementById("loading-spinner-popup").style.display = "block";
+        document.getElementById("loading-spinner-popup").style.background = "#b8c6db90";
+    } catch (e) { console.log(e); }
+    return true;
+}
+
+function HideLoadingSpinner() {
+    try {
+        document.getElementById("loading-spinner-popup").style.display = "none";
+    } catch (e) { console.log(e); }
+    return true;
+}
+
+function showPieChart(xA, yA, ID, cTitle, cLegend, cHeight, cColors /* array eg. [red, blue]*/) {
+    if (!cLegend || cLegend == null) { cLegend = false; }
     var data = [{
-        labels: xArray,
-        values: yArray,
-        // hole: .4,
+        labels: xA,
+        values: yA,
+        hole: .4,
         type: "pie",
         textinfo: "label+percent",
         insidetextorientation: "radial",
         marker: {
-            colors: chartColors
+            colors: cColors
         },
         automargin: true
     }];
 
     var layout = {
-        title: chartTile,
-        showlegend: chartLegend,
-        height: chartHeight,
-        margin: { "t": 50, "b": 20, "l": 1, "r": 1 }
+        title: cTitle,
+        showlegend: cLegend,
+        height: cHeight,
+        margin: { "t": 80, "b": 20, "l": 1, "r": 1 }
     };
 
     Plotly.newPlot(ID, data, layout);
 }
 
-function showDonutPieChart(ID, chartTile, chartLegend, val1, lbl1, val2, lbl2, txt1, txt2) {
+function showDonutChart(ID, cTitle, cLegend, v1, l1, v2, l2, txt1, txt2) {
     var data = [{
-        values: val1,
-        labels: lbl1,
+        values: v1,
+        labels: l1,
         textposition: 'inside',
         domain: { column: 0 },
         hoverinfo: 'label+percent+name',
@@ -97,8 +112,8 @@ function showDonutPieChart(ID, chartTile, chartLegend, val1, lbl1, val2, lbl2, t
         insidetextorientation: "radial",
         automargin: true
     }, {
-        values: val2,
-        labels: lbl2,
+        values: v2,
+        labels: l2,
         textposition: 'inside',
         domain: { column: 1 },
         hoverinfo: 'label+percent+name',
@@ -110,12 +125,12 @@ function showDonutPieChart(ID, chartTile, chartLegend, val1, lbl1, val2, lbl2, t
     }];
 
     var layout = {
-        title: chartTile,
+        title: cTitle,
         annotations: [{
             font: { size: 20 },
             showarrow: false,
             text: txt1,
-            x: 0.2,
+            x: 0.18,
             y: 0.5
         },
         {
@@ -126,87 +141,83 @@ function showDonutPieChart(ID, chartTile, chartLegend, val1, lbl1, val2, lbl2, t
             y: 0.5
         }],
         height: 190,
-        showlegend: chartLegend,
+        showlegend: cLegend,
         grid: { rows: 1, columns: 2 },
-        margin: { "t": 30, "b": 5, "l": 0, "r": 0 }
+        margin: { "t": 35, "b": 5, "l": 10, "r": 10 }
 
     };
 
     Plotly.newPlot(ID, data, layout);
 }
 
-function showVerDblBarChart(x1, y1, x2, y2, ID, chartTile, chartLegend, trace1Color, trace2Color, name1, name2) {
+function showVerDblBarChart(x1, y1, x2, y2, ID, cTitle, cLegend, cHeight, cPrimeColor, cSecColor, name1, name2) {
     var trace1 = {
-        // x: ["Elec", "RP", "WEC", "WPRS", "RoS"],
         x: x1,
         y: y1,
         type: 'bar',
         name: name1,
         marker: {
-            color: trace1Color,
-            opacity: 0.7
+            color: cPrimeColor,
+            opacity: 0.8
         }
     };
-
     var trace2 = {
-        // x: ["Elec", "RP", "WEC", "WPRS", "RoS"],
         x: x2,
         y: y2,
         type: 'bar',
         name: name2,
         marker: {
-            color: trace2Color,
+            color: cSecColor,
             opacity: 0.8
         }
     };
-
     var data = [trace1, trace2];
-
     var layout = {
-        title: chartTile,
+        title: cTitle,
+        height: cHeight,
         xaxis: {
             tickangle: -45
         },
-        showlegend: chartLegend,
+        showlegend: cLegend,
         barmode: 'group'
     };
 
     Plotly.newPlot(ID, data, layout);
 }
 
-function showHorBarChart(xArray, yArray, ID, chartTile, barColor) {
-    if (!xArray || xArray == null) { xArray = TR1_count; }
-    if (!yArray || yArray == null) { yArray = TR1_teams; }
-    if (!chartTile) { chartTile = "undefined"; }
-    if (!barColor) { barColor = "rgba(255,0,0,0.6)"; }
+function showHorBarChart(xA, yA, ID, cTitle, cPrimeColor) {
+    if (!xA || xA == null) { xA = TR1_count; }
+    if (!yA || yA == null) { yA = TR1_teams; }
+    if (!cTitle) { cTitle = "undefined"; }
+    if (!cPrimeColor) { cPrimeColor = "rgba(255,0,0,0.6)"; }
     var data = [{
-        x: xArray,
-        y: yArray,
+        x: xA,
+        y: yA,
         type: "bar",
         orientation: "h",
-        marker: { color: barColor }
+        marker: { color: cPrimeColor }
     }];
     var layout = {
-        title: chartTile,
+        title: cTitle,
         height: "355"
     };
 
     Plotly.newPlot(ID, data, layout);
 }
 
-function showVerBarChart(xArray, yArray, ID, chartTile, barColor) {
-    if (!xArray || xArray == null) { xArray = TR1_teams; }
-    if (!yArray || yArray == null) { yArray = TR1_count; }
-    if (!chartTile) { chartTile = "undefined"; }
-    if (!barColor) { barColor = "rgba(255,0,0,0.6)"; }
+function showVerBarChart(xA, yA, ID, cTitle, cPrimeColor) {
+    if (!xA || xA == null) { xA = TR1_teams; }
+    if (!yA || yA == null) { yA = TR1_count; }
+    if (!cTitle) { cTitle = "undefined"; }
+    if (!cPrimeColor) { cPrimeColor = "rgba(255,0,0,0.6)"; }
     var data = [{
-        x: xArray,
-        y: yArray,
+        x: xA,
+        y: yA,
         type: "bar",
-        marker: { color: barColor }
+        marker: { color: cPrimeColor }
     }];
     var layout = {
-        title: chartTile
+        title: cTitle
     };
 
     Plotly.newPlot(ID, data, layout);
@@ -263,6 +274,7 @@ function teamGraph(ID) {
 }
 
 function calcTeamSupport() {
+    // picks - global variable declired in data
     var mat1 = [];
     for (let i = 0; i < picks.length; i++) {
         const e = picks[i].pick;
@@ -276,7 +288,7 @@ function update_match_info() {
     /*===========================*\
         Home Default values
     \*===========================*/
-    var matid = document.getElementById("choose_match_id");
+    var matid = document.getElementById("Select_Match_id");
     if (matid.options[matid.selectedIndex].value == "default") {
         p = match_result.length;
         if (p >= matches)
@@ -291,8 +303,8 @@ function update_match_info() {
     document.getElementById("flag_teamA").innerHTML = "<img src='images/flag/" + team1[p].toLowerCase() + ".svg'>";
     document.getElementById("flag_teamB").innerHTML = "<img src='images/flag/" + team2[p].toLowerCase() + ".svg'>";
 
-    document.getElementById("choose_teamA").innerHTML = teams_list_st[teams_list_st.indexOf(team1[p])];
-    document.getElementById("choose_teamB").innerHTML = teams_list_st[teams_list_st.indexOf(team2[p])];
+    document.getElementById("choose_teamA").innerHTML = teams_list[teams_list_st.indexOf(team1[p])];
+    document.getElementById("choose_teamB").innerHTML = teams_list[teams_list_st.indexOf(team2[p])];
 
     document.getElementById("choose_teamA_count").innerHTML = team1_bets[p];
     document.getElementById("choose_teamB_count").innerHTML = team2_bets[p];
@@ -306,20 +318,17 @@ function update_match_info() {
         document.getElementById("img_centered_text").setAttribute("style", "color:" + ColorsArr[teams_list_st.indexOf(team2[p])] + ";");
     }
 
-    showPieChart([teams_list_st[teams_list_st.indexOf(team1[p])], teams_list_st[teams_list_st.indexOf(team2[p])]], [team1_bets[p], team2_bets[p]], "choose_pie_chart", "Support", false, 347.5, [ColorsArr[teams_list_st.indexOf(team1[p])], ColorsArr[teams_list_st.indexOf(team2[p])]]);
-    // showPieChart(TR1_teams, TR1_count, "myPlot_Pie_1", "Participation Round: 1", false, 450);
-    showVerDblBarChart(steam_short, team1_steam_supp[p].steam, steam_short, team2_steam_supp[p].steam, "myPlot_bar_1", "Group Supports", true, ColorsArr[teams_list_st.indexOf(team1[p])], ColorsArr[teams_list_st.indexOf(team2[p])], team1[p], team2[p]);
+    showPieChart([teams_list_st[teams_list_st.indexOf(team1[p])], teams_list_st[teams_list_st.indexOf(team2[p])]], [team1_bets[p], team2_bets[p]], "choose_pie_chart", "Support (Percentage)", false, 420.5, [ColorsArr[teams_list_st.indexOf(team1[p])], ColorsArr[teams_list_st.indexOf(team2[p])]]);
+    showVerDblBarChart(steam_short, team1_steam_supp[p].steam, steam_short, team2_steam_supp[p].steam, "myPlot_bar_1", "Group Supports", true, 523, ColorsArr[teams_list_st.indexOf(team1[p])], ColorsArr[teams_list_st.indexOf(team2[p])], team1[p], team2[p]);
 
-    // showHorBarChart([80,56,22,3,9,6,2,2,0,4].reverse(), ["uae","LSG","RR","sl","RCB","KKR","ned","SRH","PBKS","MI"].reverse(), "myPlot_bar_2", "First team qualify for the finals", ["#4752a1", "#7fd2d8", "#CBA92B", "#00008B", "#EC1C24", "#2E0854", "#FFFF3C", "#FF822A", "#DCDDDF", "#004BA0"].reverse());
-    // showHorBarChart([80,56,22,3,9,6,2,2,0,4].reverse(), ["uae","LSG","RR","sl","RCB","KKR","ned","SRH","PBKS","MI"].reverse(), "myPlot_bar_3", "Second team qualify for the finals", ["#4752a1", "#7fd2d8", "#CBA92B", "#00008B", "#EC1C24", "#2E0854", "#FFFF3C", "#FF822A", "#DCDDDF", "#004BA0"].reverse());
+    // showPieChart(teams_list_st, [1, 2, 59, 3, 22, 1, 0, 0, 4, 0], "myPlot_bar_2", "First team qualify for the finals (R5)", true, 523, ColorsArr);
+    // showPieChart(teams_list_st, [1, 1, 21, 3, 34, 3, 0, 9, 18, 2], "myPlot_bar_3", "Second team qualify for the finals (R5)", true, 523, ColorsArr);
+    // showPieChart(teams_list_st, [4, 1, 38, 1, 17, 1, 1, 9, 17, 3], "final_winner_support_pie", "Support for Winner (R5)", true, 523, ColorsArr);
 
-    // showPieChart(teams_list_st, [1, 2, 59, 3, 22, 1, 0, 0, 4, 0], "myPlot_bar_2", "First team qualify for the finals (R5)", true, 450, ColorsArr);
-    // showPieChart(teams_list_st, [1, 1, 21, 3, 34, 3, 0, 9, 18, 2], "myPlot_bar_3", "Second team qualify for the finals (R5)", true, 450, ColorsArr);
-    // showPieChart(teams_list_st, [4, 1, 38, 1, 17, 1, 1, 9, 17, 3], "final_winner_support_pie", "Support for Winner (R5)", true, 450, ColorsArr);
-
-    // showDonutPieChart("tr_pie_1", "Participation Rate - Round 1 and 2", false, TR1_count, TR1_teams, TR2_count, TR2_teams, "R1", "R2");
-    // showDonutPieChart("tr_pie_2", "Participation Rate - Round 3 and 4", false, TR3_count, TR3_teams, TR4_count, TR4_teams, "R3", "R4");
-    // showDonutPieChart("tr_pie_3", "Participation Rate - Round 5", false, TR5_count, TR5_teams, null, null, "R5", "");
+    // showPieChart(TR1_teams, TR1_count, "tr_pie_1", "Participation Round: 1", false, 523);
+    showDonutChart("tr_pie_1", "Participation - Round 1", true, TR1_count, TR1_teams, [], [], "R1", "");
+    // showDonutChart("tr_pie_2", "Participation Rate - Round 3 and 4", false, TR3_count, TR3_teams, TR4_count, TR4_teams, "R3", "R4");
+    // showDonutChart("tr_pie_3", "Participation Rate - Round 5", false, TR5_count, TR5_teams, null, null, "R5", "");
 
     // teamGraph("team_line_chart");
 
@@ -347,32 +356,32 @@ function update_match_info() {
 /*=================================*\
         Home Match Selection
 \*=================================*/
-var divChoose = "<label for='choose_match_id'>Choose Match:</label><select id = 'choose_match_id' onchange='update_match_info()'>";
+var divChoose = "<label for='Select_Match_id'>Choose Match:</label><select id='Select_Match_id' onchange='update_match_info()'>";
 divChoose = divChoose + "<option value='default'>Select Match</option>";
 for (i = 0; i < matches; i++) {
     divChoose = divChoose + "<option value='" + (i + 1) + "'>Match " + (i + 1) + " : " + team1[i] + " vs " + team2[i] + "</option>";
 }
 divChoose = divChoose + "</select>";
-document.getElementById('choose_round').innerHTML = divChoose;
+document.getElementById('Select_Match').innerHTML = divChoose;
 
 /*==================================*\
         Home Top Individual Ranks
 \*===================================*/
-var divran = "<div id='top_player_ranks' style='width:100%;max-width:500px;height:450px;overflow:auto;'><table class='w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white'><tr class='w3-green'><th align='center'>&nbsp;</th><th align='center'>#</th><th align='center'>Player</th><th align='center'>Score</th></tr>";
+var divRank = "<div id='top_player_ranks' style='width:100%;max-width:500px;height:523px;overflow:auto;'><table class='w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white'><tr class='w3-green'><th align='center'>&nbsp;</th><th align='center'>#</th><th align='center'>Player</th><th align='center'>Score</th></tr>";
 for (j = 0; j < players; j++) {
     if (player_ranks_ranks[j] > 10) {
         break;
     }
-    divran = divran + "<td><i class='fa fa-user w3-text-red w3-large'></i></td><td align ='center'>";
+    divRank = divRank + "<td><i class='fa fa-user w3-text-red w3-large'></i></td><td align ='center'>";
     if (j != 0 && player_score_ranks[j] == player_score_ranks[j - 1])
-        divran = divran + "&nbsp";
+        divRank = divRank + "&nbsp";
     else
-        divran = divran + player_ranks_ranks[j];
+        divRank = divRank + player_ranks_ranks[j];
 
-    divran = divran + "</td><td>" + player_list_ranks[j] + "</td><td align='center'>" + player_score_ranks[j] + "</td></tr>";
+    divRank = divRank + "</td><td>" + player_list_ranks[j] + "</td><td align='center'>" + player_score_ranks[j] + "</td></tr>";
 }
-divran = divran + "</table></div>";
-document.getElementById('top_player_ranks_group').innerHTML = divran;
+divRank = divRank + "</table></div>";
+document.getElementById('top_player_ranks_group').innerHTML = divRank;
 
 /*==================================*\
         Home Top Team Ranks
@@ -380,16 +389,21 @@ document.getElementById('top_player_ranks_group').innerHTML = divran;
 console.log("Team average: " + steam_avg + " " + steam_short);
 console.log("Team ranks: " + steam_list_ranks + " " + steam_score_ranks + " " + steam_ranks_ranks);
 
-var divteamrank = "<table class='w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white'><tr class='w3-green'><th>&nbsp;</th><th>#</th><th>Team Name</th><th>Avg Score</th></tr>";
+var divGroupRank = "<div class='w3-margin-bottom'>";
+divGroupRank += "<table class='w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white'><tr class='w3-green'><th>&nbsp;</th><th>#</th><th>Team Name</th><th>Avg Score</th></tr>";
+
 for (let q = 0; q < steam_list_ranks.length; q++) {
     let steam_list_team_ranks = [];
     steam_list_team_ranks[q] = steam[steam_short.indexOf(steam_list_ranks[q])];
-    divteamrank = divteamrank + "<td><i class='fa fa-users w3-text-red w3-large'></i></td>";
-    divteamrank = divteamrank + "<td align ='center'>" + steam_ranks_ranks[q] + "</td><td>" + steam_list_team_ranks[q] + "</td><td align='center'>" + steam_score_ranks[q] + "</td></tr>";
+    divGroupRank += "<td><i class='fa fa-users w3-text-red w3-large'></i></td>";
+    divGroupRank += "<td align ='center'>" + steam_ranks_ranks[q] + "</td><td>" + steam_list_team_ranks[q] + "</td><td align='center'>" + steam_score_ranks[q] + "</td></tr>";
 }
 
-divteamrank = divteamrank + "</table>";
-document.getElementById('top_team_ranks').innerHTML = divteamrank;
+divGroupRank += "</table>";
+divGroupRank += "</div>";
+divGroupRank += "<div id='tr_pie_1'></div>";
+
+document.getElementById('top_team_ranks').innerHTML = divGroupRank;
 
 /*=============================*\
         Home Load Operations

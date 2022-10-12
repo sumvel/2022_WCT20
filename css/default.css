@@ -128,3 +128,12 @@ table{width:100%}
 .t20-pak,.t20-hover-pak:hover,
 .t20-ind,.t20-hover-ind:hover,
 .t20-sa,.t20-hover-sa:hover {color:var(--team-primary-colour)!important;background-color:var(--team-secondary-colour)!important}
+
+/* Added new css to add loader by DYadav15 04/07/2022 */
+.loading-spinner-popup {position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 1050;display: block;background: #a6acb496; overflow: hidden;-webkit-overflow-scrolling: touch;outline: 0;opacity: 1;transition: opacity 0.6s;}
+.loading-spinner {display: inline-block;position: relative;top: 47%;left: 47%;width: 64px;height: 64px}
+.loading-spinner div {display: inline-block;position: absolute;left: 6px;width: 13px;background: #003366;animation: loading-spinner 1.2s cubic-bezier(0, .5, .5, 1) infinite}
+.loading-spinner div:nth-child(1) {left: 6px;animation-delay: -.24s}
+.loading-spinner div:nth-child(2) {left: 26px;animation-delay: -.12s}
+.loading-spinner div:nth-child(3) {left: 45px;animation-delay: 0}
+@keyframes loading-spinner {0% {top: 6px;height: 51px} 50%,100% {top: 19px;height: 26px}}
