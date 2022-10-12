@@ -1,8 +1,3 @@
-/* FOR TESTING ONLY - Original Data will be from Suman 
-It is copied from old IPL data for testing purpose
-*/
-
-
 var r1_end = 12;
 var r2_end = 26;
 var r3_end = 42;
