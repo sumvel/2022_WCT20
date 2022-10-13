@@ -17,17 +17,21 @@ function w3_close() {
     overlayBg.style.display = "none";
 }
 
-var TR1_teams = steam_short; // ["STSI", "PITC", "PUTC", "INM", "CMI", "CITC", "Others"];
-var TR2_teams = TR1_teams; // ;P
-var TR3_teams = TR2_teams; // ;P
-var TR4_teams = TR3_teams; // ;P
-var TR5_teams = TR4_teams; // ;P
+function countItems(arr, element) {
+    var count = 0, i;
+    while ((i = arr.indexOf(element, i)) != -1) {
+        ++count;
+        ++i;
+    }
+    return count
+}
 
-var TR1_count = [30, 27, 33, 35, 28, 30, 35] // Manually update for first round;
-var TR2_count = [30, 16, 26, 21, 31, 30, 35];
-var TR3_count = [16, 23, 17, 23, 19, 30, 35];
-var TR4_count = [15, 23, 14, 18, 9, 30, 35];
-var TR5_count = [16, 14, 23, 12, 19, 30, 35];
+/* Participation Donut Charts */
+var Count_steam_st = [];
+steam_st.forEach(function(e) {
+    Count_steam_st.push(countItems(player_steam_list, e));
+});
+console.log(Count_steam_st);
 
 var ColorsObj = {
     "ned": "#EF6C00",
@@ -186,8 +190,8 @@ function showVerDblBarChart(x1, y1, x2, y2, ID, cTitle, cLegend, cHeight, cPrime
 }
 
 function showHorBarChart(xA, yA, ID, cTitle, cPrimeColor) {
-    if (!xA || xA == null) { xA = TR1_count; }
-    if (!yA || yA == null) { yA = TR1_teams; }
+    if (!xA || xA == null) { xA = Count_steam_st; }
+    if (!yA || yA == null) { yA = steam_st; }
     if (!cTitle) { cTitle = "undefined"; }
     if (!cPrimeColor) { cPrimeColor = "rgba(255,0,0,0.6)"; }
     var data = [{
@@ -206,8 +210,8 @@ function showHorBarChart(xA, yA, ID, cTitle, cPrimeColor) {
 }
 
 function showVerBarChart(xA, yA, ID, cTitle, cPrimeColor) {
-    if (!xA || xA == null) { xA = TR1_teams; }
-    if (!yA || yA == null) { yA = TR1_count; }
+    if (!xA || xA == null) { xA = steam_st; }
+    if (!yA || yA == null) { yA = Count_steam_st; }
     if (!cTitle) { cTitle = "undefined"; }
     if (!cPrimeColor) { cPrimeColor = "rgba(255,0,0,0.6)"; }
     var data = [{
@@ -226,7 +230,7 @@ function showVerBarChart(xA, yA, ID, cTitle, cPrimeColor) {
 function teamGraph(ID) {
     var trace1 = {
         x: ["R1", "R2", "R3", "R4", "R5"],
-        y: [TR1_count[0], TR2_count[0], TR3_count[0], TR4_count[0], TR5_count[0]],
+        y: [Count_steam_st[0], TR2_count[0], TR3_count[0], TR4_count[0], TR5_count[0]],
         mode: 'lines+markers',
         type: 'scatter',
         name: steam_short[0]
@@ -234,7 +238,7 @@ function teamGraph(ID) {
 
     var trace2 = {
         x: ["R1", "R2", "R3", "R4", "R5"],
-        y: [TR1_count[1], TR2_count[1], TR3_count[1], TR4_count[1], TR5_count[1]],
+        y: [Count_steam_st[1], TR2_count[1], TR3_count[1], TR4_count[1], TR5_count[1]],
         mode: 'lines+markers',
         type: 'scatter',
         name: steam_short[1]
@@ -242,7 +246,7 @@ function teamGraph(ID) {
 
     var trace3 = {
         x: ["R1", "R2", "R3", "R4", "R5"],
-        y: [TR1_count[2], TR2_count[2], TR3_count[2], TR4_count[2], TR5_count[2]],
+        y: [Count_steam_st[2], TR2_count[2], TR3_count[2], TR4_count[2], TR5_count[2]],
         mode: 'lines+markers',
         type: 'scatter',
         name: steam_short[2]
@@ -250,7 +254,7 @@ function teamGraph(ID) {
 
     var trace4 = {
         x: ["R1", "R2", "R3", "R4", "R5"],
-        y: [TR1_count[3], TR2_count[3], TR3_count[3], TR4_count[3], TR5_count[3]],
+        y: [Count_steam_st[3], TR2_count[3], TR3_count[3], TR4_count[3], TR5_count[3]],
         mode: 'lines+markers',
         type: 'scatter',
         name: steam_short[3]
@@ -258,7 +262,7 @@ function teamGraph(ID) {
 
     var trace5 = {
         x: ["R1", "R2", "R3", "R4", "R5"],
-        y: [TR1_count[4], TR2_count[4], TR3_count[4], TR4_count[4], TR5_count[4]],
+        y: [Count_steam_st[4], TR2_count[4], TR3_count[4], TR4_count[4], TR5_count[4]],
         mode: 'lines+markers',
         type: 'scatter',
         name: steam_short[4]
@@ -314,8 +318,10 @@ function update_match_info() {
 
     if (Number(team1_bets[p]) > Number(team2_bets[p])) {
         document.getElementById("img_centered_text").setAttribute("style", "color:" + ColorsArr[teams_list_st.indexOf(team1[p])] + ";");
+        document.getElementById("centered_Hash").setAttribute("style", "color:" + ColorsArr[teams_list_st.indexOf(team2[p])] + ";");
     } else {
         document.getElementById("img_centered_text").setAttribute("style", "color:" + ColorsArr[teams_list_st.indexOf(team2[p])] + ";");
+        document.getElementById("centered_Hash").setAttribute("style", "color:" + ColorsArr[teams_list_st.indexOf(team1[p])] + ";");
     }
 
     showPieChart([teams_list_st[teams_list_st.indexOf(team1[p])], teams_list_st[teams_list_st.indexOf(team2[p])]], [team1_bets[p], team2_bets[p]], "choose_pie_chart", "Support (Percentage)", false, 420.5, [ColorsArr[teams_list_st.indexOf(team1[p])], ColorsArr[teams_list_st.indexOf(team2[p])]]);
@@ -325,8 +331,8 @@ function update_match_info() {
     // showPieChart(teams_list_st, [1, 1, 21, 3, 34, 3, 0, 9, 18, 2], "myPlot_bar_3", "Second team qualify for the finals (R5)", true, 523, ColorsArr);
     // showPieChart(teams_list_st, [4, 1, 38, 1, 17, 1, 1, 9, 17, 3], "final_winner_support_pie", "Support for Winner (R5)", true, 523, ColorsArr);
 
-    // showPieChart(TR1_teams, TR1_count, "tr_pie_1", "Participation Round: 1", false, 523);
-    showDonutChart("tr_pie_1", "Participation - Round 1", true, TR1_count, TR1_teams, [], [], "R1", "");
+    // showPieChart(steam_st, Count_steam_st, "tr_pie_1", "Participation Round: 1", false, 523);
+    showDonutChart("tr_pie_1", "Participation - Round 1", true, Count_steam_st, steam_st, [], [], "R1", "");
     // showDonutChart("tr_pie_2", "Participation Rate - Round 3 and 4", false, TR3_count, TR3_teams, TR4_count, TR4_teams, "R3", "R4");
     // showDonutChart("tr_pie_3", "Participation Rate - Round 5", false, TR5_count, TR5_teams, null, null, "R5", "");
 
