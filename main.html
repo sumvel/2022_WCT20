@@ -114,14 +114,14 @@
 	{
 		j = i+1;
 		divsch = divsch +"<tr><td align='center'>"+j+"</td><td align='center'>&nbsp;"+dat[i] +"&nbsp;</td><td align='center'>"+teams_list[teams_list_st.indexOf(team1[i])];
-		if(team1_bets[i]>=team2_bets[i])
-			divsch = divsch + "</td><td align='center' bgcolor='gold'>" + team1_bets[i] + "</td><td align='center'>"+teams_list[teams_list_st.indexOf(team2[i])];
+		if(team1_supps[i]>=team2_supps[i])
+			divsch = divsch + "</td><td align='center' bgcolor='gold'>" + team1_supps[i] + "</td><td align='center'>"+teams_list[teams_list_st.indexOf(team2[i])];
 		else
-			divsch = divsch + "</td><td align='center'>" + team1_bets[i] + "</td><td align='center'>"+teams_list[teams_list_st.indexOf(team2[i])];
-		if(team1_bets[i]<=team2_bets[i])
-			divsch = divsch + "</td><td align='center' bgcolor='gold'>"+team2_bets[i]+"</td></tr>";
+			divsch = divsch + "</td><td align='center'>" + team1_supps[i] + "</td><td align='center'>"+teams_list[teams_list_st.indexOf(team2[i])];
+		if(team1_supps[i]<=team2_supps[i])
+			divsch = divsch + "</td><td align='center' bgcolor='gold'>"+team2_supps[i]+"</td></tr>";
 		else
-			divsch = divsch + "</td><td align='center'>"+team2_bets[i]+"</td></tr>";
+			divsch = divsch + "</td><td align='center'>"+team2_supps[i]+"</td></tr>";
 	}
 	divsch = divsch + "</table>";
 	document.getElementById('schedulediv').innerHTML= divsch;
@@ -142,18 +142,18 @@
 			divres = divres + "<td align='center' bgcolor='Lime'>"+ teams_list[teams_list_st.indexOf(team1[i])]; 
 		else
 			divres = divres + "<td align='center'>"+ teams_list[teams_list_st.indexOf(team1[i])];
-		if(team1_bets[i]>=team2_bets[i])
-			divres = divres + "</td><td align='center' bgcolor='gold'>" + team1_bets[i] + "</td>";
+		if(team1_supps[i]>=team2_supps[i])
+			divres = divres + "</td><td align='center' bgcolor='gold'>" + team1_supps[i] + "</td>";
 		else
-			divres = divres + "</td><td align='center'>" + team1_bets[i] + "</td>";
+			divres = divres + "</td><td align='center'>" + team1_supps[i] + "</td>";
 		if(match_result[i] == team2[i])
 			divres = divres + "<td align='center' bgcolor='Lime'>"+ teams_list[teams_list_st.indexOf(team2[i])];
 		else
 			divres = divres + "<td align='center'>"+ teams_list[teams_list_st.indexOf(team2[i])];
-		if(team1_bets[i]<=team2_bets[i])
-			divres = divres + "</td><td align='center' bgcolor='gold'>" + team2_bets[i] + "</td></tr>";
+		if(team1_supps[i]<=team2_supps[i])
+			divres = divres + "</td><td align='center' bgcolor='gold'>" + team2_supps[i] + "</td></tr>";
 		else
-			divres = divres + "</td><td align='center'>" + team2_bets[i] + "</td></tr>";
+			divres = divres + "</td><td align='center'>" + team2_supps[i] + "</td></tr>";
 	}
 	divres = divres + "</table>";
 	document.getElementById('resultsdiv').innerHTML= divres;

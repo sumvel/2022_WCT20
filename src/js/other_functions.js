@@ -172,7 +172,7 @@ function match_info() {
 	divmat = divmat + "<tr><th align='left'>Played</th><td align='center'>" + tem_play[teams_list_st.indexOf(team1[p])] + "</td><td align='center'>" + tem_play[teams_list_st.indexOf(team2[p])] + "</td></tr>";
 	divmat = divmat + "<tr><th align='left'>Won</th><td align='center'>" + tem_won[teams_list_st.indexOf(team1[p])] + "</td><td align='center'>" + tem_won[teams_list_st.indexOf(team2[p])] + "</td></tr>";
 	//divmat = divmat + "<tr><th align='left'>Points</th><td align='center'>" + (tem_won[teams_list_st.indexOf(team1[p])] * 2) + "</td><td align='center'>" + (tem_won[teams_list_st.indexOf(team2[p])] * 2) + "</td></tr>";
-	divmat = divmat + "<tr><th align='left'>Supports</th><td align='center'>" + team1_bets[p] + "</td><td align='center'>" + team2_bets[p] + "</td></tr>";
+	divmat = divmat + "<tr><th align='left'>Supports</th><td align='center'>" + team1_supps[p] + "</td><td align='center'>" + team2_supps[p] + "</td></tr>";
 	divmat = divmat + "<tr><th align='left'>Supporters</th><td align='left'>"; 
 	for (i = 0; i < players; i++)
 		if (picks[i].pick[p] == team1[p])

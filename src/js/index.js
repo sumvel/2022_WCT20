@@ -306,19 +306,19 @@ function update_match_info() {
     document.getElementById("choose_teamA").innerHTML = teams_list[teams_list_st.indexOf(team1[p])];
     document.getElementById("choose_teamB").innerHTML = teams_list[teams_list_st.indexOf(team2[p])];
 
-    document.getElementById("choose_teamA_count").innerHTML = team1_bets[p];
-    document.getElementById("choose_teamB_count").innerHTML = team2_bets[p];
+    document.getElementById("choose_teamA_count").innerHTML = team1_supps[p];
+    document.getElementById("choose_teamB_count").innerHTML = team2_supps[p];
 
     document.getElementById("choose_teamA_container").className = "w3-container w3-padding-16 " + ColorClss[teams_list_st.indexOf(team1[p])];
     document.getElementById("choose_teamB_container").className = "w3-container w3-padding-16 " + ColorClss[teams_list_st.indexOf(team2[p])];
 
-    if (Number(team1_bets[p]) > Number(team2_bets[p])) {
+    if (Number(team1_supps[p]) > Number(team2_supps[p])) {
         document.getElementById("img_centered_text").setAttribute("style", "color:" + ColorsArr[teams_list_st.indexOf(team1[p])] + ";");
     } else {
         document.getElementById("img_centered_text").setAttribute("style", "color:" + ColorsArr[teams_list_st.indexOf(team2[p])] + ";");
     }
 
-    showPieChart([teams_list_st[teams_list_st.indexOf(team1[p])], teams_list_st[teams_list_st.indexOf(team2[p])]], [team1_bets[p], team2_bets[p]], "choose_pie_chart", "Support (Percentage)", false, 420.5, [ColorsArr[teams_list_st.indexOf(team1[p])], ColorsArr[teams_list_st.indexOf(team2[p])]]);
+    showPieChart([teams_list_st[teams_list_st.indexOf(team1[p])], teams_list_st[teams_list_st.indexOf(team2[p])]], [team1_supps[p], team2_supps[p]], "choose_pie_chart", "Support (Percentage)", false, 420.5, [ColorsArr[teams_list_st.indexOf(team1[p])], ColorsArr[teams_list_st.indexOf(team2[p])]]);
     showVerDblBarChart(steam_short, team1_steam_supp[p].steam, steam_short, team2_steam_supp[p].steam, "myPlot_bar_1", "Group Supports", true, 523, ColorsArr[teams_list_st.indexOf(team1[p])], ColorsArr[teams_list_st.indexOf(team2[p])], team1[p], team2[p]);
 
     // showPieChart(teams_list_st, [1, 2, 59, 3, 22, 1, 0, 0, 4, 0], "myPlot_bar_2", "First team qualify for the finals (R5)", true, 523, ColorsArr);
