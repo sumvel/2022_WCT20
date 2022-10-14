@@ -358,8 +358,8 @@ function update_match_info() {
         document.getElementById("logo_teamB").innerHTML = "<img src='images/q.png'>";
         document.getElementById("flag_teamA").innerHTML = "<img src='images/p.svg'>";
         document.getElementById("flag_teamB").innerHTML = "<img src='images/p.svg'>";
-        document.getElementById("heading_text_part1").setAttribute("style", "color:" + ColorsArr[0] + ";");
-        document.getElementById("heading_text_part2").setAttribute("style", "color:" + ColorsArr[1] + ";");
+        document.getElementById("heading_text_part1").setAttribute("style", "color:" + ColorsArr[0]);
+        document.getElementById("heading_text_part2").setAttribute("style", "color:" + ColorsArr[1]);
     }
 };
 
