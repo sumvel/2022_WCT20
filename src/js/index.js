@@ -34,31 +34,37 @@ steam_st.forEach(function(e) {
 console.log(Count_steam_st);
 
 var ColorsObj = {
-    "ned": "#EF6C00",
-    "sl": "#1B2E96",
-    "uae": "#CE963F",
-    "nam": "#174CC5",
-    "ire": "#30742D",
-    "wi": "#7D1041",
-    "scot": "#1D2338",
-    "zim": "#CD151C",
-    "eng": "#04064D",
-    "nz": "#1F1F1F",
-    "aus": "#0B661E",
-    "afg": "#0954AF",
-    "ban": "#00644C",
-    "pak": "#206500",
-    "ind": "#0057AF",
-    "sa": "#0B5425"
+    "ned": ["#EF6C00", "#212649"],
+    "sl": ["#1B2E96", "#FFC500"],
+    "uae": ["#CE963F", "#FFFFFF"],
+    "nam": ["#174CC5", "#F81D00"],
+    "ire": ["#30742D", "#06215C"],
+    "wi": ["#7D1041", "#E2DA14"],
+    "scot": ["#1D2338", "#84A2E1"],
+    "zim": ["#CD151C", "#F8B526"],
+    "eng": ["#04064D", "#FE1448"],
+    "nz": ["#1F1F1F", "#E8EBED"],
+    "aus": ["#0B661E", "#FFD500"],
+    "afg": ["#0954AF", "#FC0011"],
+    "ban": ["#00644C", "#F91A22"],
+    "pak": ["#206500", "#70E101"],
+    "ind": ["#0057AF", "#FF5500"],
+    "sa": ["#0B5425", "#F5AB00"]
 };
 
 // var ColorsArr = ['#EF6C00', '#1B2E96', '#CE963F', '#174CC5', '#30742D', '#7D1041', '#1D2338', '#CD151C', '#04064D', '#1F1F1F', '#0B661E', '#0954AF', '#00644C', '#206500', '#0057AF', '#0B5425']
-var ColorsArr = Object.values(ColorsObj);
+var ColorsArr = Object.values(ColorsObj).map(function (k) {
+    return k[0];
+});
 console.log(ColorsArr);
+
+var ColorsObjSecondary = Object.values(ColorsObj).map(function (k) {
+    return k[1];
+});
+console.log(ColorsObjSecondary);
 
 // var ColorClss = ['t20-ned', 't20-sl', 't20-uae', 't20-nam', 't20-ire', 't20-wi', 't20-scot', 't20-zim', 't20-eng', 't20-nz', 't20-aus', 't20-afg', 't20-ban', 't20-pak', 't20-ind', 't20-sa'];
 var ColorClss = Object.keys(ColorsObj).map(function (k) {
-    // console.log(k, ColorsObj[k]);
     return `t20-${k}`;
 });
 console.log(ColorClss);
@@ -317,11 +323,11 @@ function update_match_info() {
     document.getElementById("choose_teamB_container").className = "w3-container w3-padding-16 " + ColorClss[teams_list_st.indexOf(team2[p])];
 
     if (Number(team1_supps[p]) > Number(team2_supps[p])) {
-        document.getElementById("img_centered_text").setAttribute("style", "color:" + ColorsArr[teams_list_st.indexOf(team1[p])] + ";");
-        document.getElementById("centered_Hash").setAttribute("style", "color:" + ColorsArr[teams_list_st.indexOf(team2[p])] + ";");
+        document.getElementById("heading_text_part2").setAttribute("style", "color:" + ColorsArr[teams_list_st.indexOf(team1[p])] + ";");
+        document.getElementById("heading_text_part1").setAttribute("style", "color:" + ColorsArr[teams_list_st.indexOf(team2[p])] + ";");
     } else {
-        document.getElementById("img_centered_text").setAttribute("style", "color:" + ColorsArr[teams_list_st.indexOf(team2[p])] + ";");
-        document.getElementById("centered_Hash").setAttribute("style", "color:" + ColorsArr[teams_list_st.indexOf(team1[p])] + ";");
+        document.getElementById("heading_text_part2").setAttribute("style", "color:" + ColorsArr[teams_list_st.indexOf(team2[p])] + ";");
+        document.getElementById("heading_text_part1").setAttribute("style", "color:" + ColorsArr[teams_list_st.indexOf(team1[p])] + ";");
     }
 
     showPieChart([teams_list_st[teams_list_st.indexOf(team1[p])], teams_list_st[teams_list_st.indexOf(team2[p])]], [team1_supps[p], team2_supps[p]], "choose_pie_chart", "Support (Percentage)", false, 420.5, [ColorsArr[teams_list_st.indexOf(team1[p])], ColorsArr[teams_list_st.indexOf(team2[p])]]);
@@ -330,16 +336,13 @@ function update_match_info() {
     // showPieChart(teams_list_st, [1, 2, 59, 3, 22, 1, 0, 0, 4, 0], "myPlot_bar_2", "First team qualify for the finals (R5)", true, 523, ColorsArr);
     // showPieChart(teams_list_st, [1, 1, 21, 3, 34, 3, 0, 9, 18, 2], "myPlot_bar_3", "Second team qualify for the finals (R5)", true, 523, ColorsArr);
     // showPieChart(teams_list_st, [4, 1, 38, 1, 17, 1, 1, 9, 17, 3], "final_winner_support_pie", "Support for Winner (R5)", true, 523, ColorsArr);
-
     // showPieChart(steam_st, Count_steam_st, "tr_pie_1", "Participation Round: 1", false, 523);
+
     showDonutChart("tr_pie_1", "Participation - Round 1", true, Count_steam_st, steam_st, [], [], "R1", "");
     // showDonutChart("tr_pie_2", "Participation Rate - Round 3 and 4", false, TR3_count, TR3_teams, TR4_count, TR4_teams, "R3", "R4");
     // showDonutChart("tr_pie_3", "Participation Rate - Round 5", false, TR5_count, TR5_teams, null, null, "R5", "");
-
     // teamGraph("team_line_chart");
 
-    // showVerBarChart(null, [17, 8, 12, 12, 6, 18, 2, 7], "myPlot_hor_bar_1", "Team Entries for ned", "rgba(255,0,0,0.6)");
-    // showVerBarChart(null, [7, 2, 2, 5, 0, 5, 1, 0], "myPlot_hor_bar_2", "Team Entries for KKR", "rgba(0, 102, 255, 0.6)");
     console.log(team1_steam_supp[p].steam);
     console.log(team2_steam_supp[p].steam);
 
@@ -355,19 +358,20 @@ function update_match_info() {
         document.getElementById("logo_teamB").innerHTML = "<img src='images/q.png'>";
         document.getElementById("flag_teamA").innerHTML = "<img src='images/p.svg'>";
         document.getElementById("flag_teamB").innerHTML = "<img src='images/p.svg'>";
-        document.getElementById("img_centered_text").setAttribute("style", "color:" + ColorsObj.NA + ";");
+        document.getElementById("heading_text_part1").setAttribute("style", "color:" + ColorsArr[0] + ";");
+        document.getElementById("heading_text_part2").setAttribute("style", "color:" + ColorsArr[1] + ";");
     }
 };
 
 /*=================================*\
         Home Match Selection
 \*=================================*/
-var divChoose = "<label for='Select_Match_id'>Choose Match:</label><select id='Select_Match_id' onchange='update_match_info()'>";
-divChoose = divChoose + "<option value='default'>Select Match</option>";
+var divChoose = "<h5><label for='Select_Match_id'>Match: </label><select id='Select_Match_id' onchange='update_match_info()'></h5>";
+divChoose += "<option value='default'>Select a match</option>";
 for (i = 0; i < matches; i++) {
-    divChoose = divChoose + "<option value='" + (i + 1) + "'>Match " + (i + 1) + " : " + team1[i] + " vs " + team2[i] + "</option>";
+    divChoose += "<option value='" + (i + 1) + "'>" + (i + 1) + " : " + team1[i] + " vs " + team2[i] + "</option>";
 }
-divChoose = divChoose + "</select>";
+divChoose += "</select>";
 document.getElementById('Select_Match').innerHTML = divChoose;
 
 /*==================================*\
