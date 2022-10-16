@@ -6,7 +6,7 @@ var r3_exists = true;
 var r4_exists = false;
 
 var match_result = new Array(); //"SL", "NED"
-//match_result[0] = "KKR";
+match_result[0] = "NAM";
 //match_result[1] = "DC";
 var mat_per_week = new Array(0, 14, 28, 41); // included
 var week_num = 0;
