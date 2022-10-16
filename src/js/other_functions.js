@@ -23,7 +23,7 @@ function sel_steam() {
 			else
 				divran = divran + "<tr bgcolor='#F8F8F8'>";
 			divran = divran + "<td align ='center'>";
-			if (p != 0 && player_score_ranks[j] == prev_ply_rank)
+			if (j != 0 && player_score_ranks[j] == prev_ply_rank)
 				divran = divran + "&nbsp";
 			else
 				divran = divran + p;//player_ranks_ranks[j];
