@@ -173,11 +173,11 @@ function match_info() {
 	divmat = divmat + "<tr><th align='left'>Won</th><td align='center'>" + tem_won[teams_list_st.indexOf(team1[p])] + "</td><td align='center'>" + tem_won[teams_list_st.indexOf(team2[p])] + "</td></tr>";
 	//divmat = divmat + "<tr><th align='left'>Points</th><td align='center'>" + (tem_won[teams_list_st.indexOf(team1[p])] * 2) + "</td><td align='center'>" + (tem_won[teams_list_st.indexOf(team2[p])] * 2) + "</td></tr>";
 	divmat = divmat + "<tr><th align='left'>Supports</th><td align='center'>" + team1_supps[p] + "</td><td align='center'>" + team2_supps[p] + "</td></tr>";
-	divmat = divmat + "<tr><th align='left'>Supporters</th><td align='left'>"; 
+	divmat = divmat + "<tr><th align='left' style='vertical-align: baseline;'>Supporters</th><td align='left' style='vertical-align: baseline;'>"; 
 	for (i = 0; i < players; i++)
 		if (picks[i].pick[p] == team1[p])
 			divmat = divmat + "&nbsp&nbsp" + player_list[i] + "<br>";//.toUpperCase()
-	divmat = divmat + "</td><td align='left'>";
+	divmat = divmat + "</td><td align='left' style='vertical-align: baseline;'>";
 	for (i = 0; i < players; i++)
 		if (picks[i].pick[p] == team2[p])
 			divmat = divmat + "&nbsp&nbsp" + player_list[i] + "<br>";//.toUpperCase()
