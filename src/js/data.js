@@ -39,14 +39,16 @@ var steam_part = new Array(0, 0, 0, 0, 0, 0, 0);
 var steam_avg = new Array(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
 var steam_cnt = steam.length;
 
-var dat = new Array("16-OCT", "16-OCT", "17-OCT", "17-OCT", "18-OCT", "18-OCT", "19-OCT", "19-OCT", "20-OCT", "20-OCT", "21-OCT", "21-OCT");//, "22-OCT", "22-OCT", "23-OCT", "23-OCT", "24-OCT", "24-OCT", "25-OCT", "26-OCT", "26-OCT", "27-OCT", "27-OCT", "27-OCT", "28-OCT", "28-OCT", "29-OCT", "30-OCT", "30-OCT", "30-OCT", "31-OCT", "1-NOV", "2-NOV", "2-NOV", "2-NOV", "3-NOV", "4-NOV", "4-NOV", "5-NOV", "6-NOV", "6-NOV", "6-NOV");
+var dat = new Array("16-OCT", "16-OCT", "17-OCT", "17-OCT", "18-OCT", "18-OCT", "19-OCT", "19-OCT", "20-OCT", "20-OCT", "21-OCT", "21-OCT", "22-OCT", "22-OCT", "23-OCT", "23-OCT", "24-OCT", "24-OCT", "25-OCT", "26-OCT", "26-OCT", "27-OCT", "27-OCT", "27-OCT", "28-OCT", "28-OCT", "29-OCT", "30-OCT", "30-OCT", "30-OCT", "31-OCT", "1-NOV", "2-NOV", "2-NOV", "2-NOV", "3-NOV", "4-NOV", "4-NOV", "5-NOV", "6-NOV", "6-NOV", "6-NOV");
 var matches = dat.length;
 //alert("matches = " + matches);
 
 //alert("players = " + players);
 
-var team1 = new Array("NAM", "NED", "SCOT", "IRE", "NAM", "SL", "IRE", "WI", "NED", "NAM", "IRE", "SCOT");//, "AUS", "AFG", "GA1", "IND", "BAN", "SA", "AUS", "GB2", "NZ", "SA", "GA2", "PAK", "AFG", "AUS", "NZ", "BAN", "GA2", "IND", "AUS", "AFG", "ENG", "GB1", "IND", "PAK", "GB2", "AUS", "GA1", "SA", "PAK", "GB1"); //No spaces in name
-var team2 = new Array("SL", "UAE", "WI", "ZIM", "NED", "UAE", "SCOT", "ZIM", "SL", "UAE", "WI", "ZIM");//, "NZ", "ENG", "GB2", "PAK", "GA2", "GB1", "GA1", "ENG", "AFG", "BAN", "IND", "GB1", "GB2", "ENG", "GA1", "GB1", "PAK", "SA", "GB2", "GA1", "NZ", "GA2", "BAN", "SA", "NZ", "AFG", "ENG", "GA2", "BAN", "IND");
+var team1 = new Array("NAM", "NED", "SCOT", "IRE", "NAM", "SL", "IRE", "WI", "NED", "NAM", "IRE", "SCOT", "AUS", "AFG", "SL", "IND", "BAN", "SA", "AUS", "IRE", "NZ", "SA", "NED", "PAK", "AFG", "AUS", "NZ", "BAN", "NED", "IND", "AUS", "AFG", "ENG", "ZIM", "IND", "PAK", "IRE", "AUS", "SL", "SA", "PAK", "ZIM");
+//"NAM", "NED", "SCOT", "IRE", "NAM", "SL", "IRE", "WI", "NED", "NAM", "IRE", "SCOT");//, "AUS", "AFG", "GA1", "IND", "BAN", "SA", "AUS", "GB2", "NZ", "SA", "GA2", "PAK", "AFG", "AUS", "NZ", "BAN", "GA2", "IND", "AUS", "AFG", "ENG", "GB1", "IND", "PAK", "GB2", "AUS", "GA1", "SA", "PAK", "GB1"); //No spaces in name
+var team2 = new Array("SL", "UAE", "WI", "ZIM", "NED", "UAE", "SCOT", "ZIM", "SL", "UAE", "WI", "ZIM", "NZ", "ENG", "IRE", "PAK", "NED", "ZIM", "SL", "ENG", "AFG", "BAN", "IND", "ZIM", "IRE", "ENG", "SL", "ZIM", "PAK", "SA", "IRE", "SL", "NZ", "NED", "BAN", "SA", "NZ", "AFG", "ENG", "NED", "BAN", "IND");
+//"SL", "UAE", "WI", "ZIM", "NED", "UAE", "SCOT", "ZIM", "SL", "UAE", "WI", "ZIM");//, "NZ", "ENG", "GB2", "PAK", "GA2", "GB1", "GA1", "ENG", "AFG", "BAN", "IND", "GB1", "GB2", "ENG", "GA1", "GB1", "PAK", "SA", "GB2", "GA1", "NZ", "GA2", "BAN", "SA", "NZ", "AFG", "ENG", "GA2", "BAN", "IND");
 var team1_supps = new Array();
 var team2_supps = new Array();
 
