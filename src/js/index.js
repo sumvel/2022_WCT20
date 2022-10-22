@@ -338,7 +338,7 @@ function update_match_info() {
     // showPieChart(teams_list_st, [4, 1, 38, 1, 17, 1, 1, 9, 17, 3], "final_winner_support_pie", "Support for Winner (R5)", true, 523, ColorsArr);
     // showPieChart(steam_st, Count_steam_st, "tr_pie_1", "Participation Round: 1", false, 523);
 
-    showDonutChart("tr_pie_1", "Participation - Round 1", true, Count_steam_st, steam_st, [], [], "R1", "");
+    showDonutChart("tr_pie_1", "Participation", true, Count_steam_st, steam_st, [], [], "", "");
     // showDonutChart("tr_pie_2", "Participation Rate - Round 3 and 4", false, TR3_count, TR3_teams, TR4_count, TR4_teams, "R3", "R4");
     // showDonutChart("tr_pie_3", "Participation Rate - Round 5", false, TR5_count, TR5_teams, null, null, "R5", "");
     // teamGraph("team_line_chart");
