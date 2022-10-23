@@ -202,47 +202,47 @@ function player_stats() {
 	for (j = 0; j < teams; j++)
 		supps[j].supp = new Array(0, 0, 0, 0);
 	for (j = 0; j < r1_end; j++) {
-		if (picks[i].pick[j] != "NS")
+		if (picks[i].pick[j] != null && picks[i].pick[j] != "NS")
 			selected[0]++;
-		if (picks[i].pick[j] == match_result[j]) {
+		if (picks[i].pick[j] != null && picks[i].pick[j] == match_result[j]) {
 			won[0]++;
 			pts[0]++;
 		}
 		for (k = 0; k < teams; k++)
-			if (picks[i].pick[j] == teams_list_st[k])
+			if (picks[i].pick[j] != null && picks[i].pick[j] == teams_list_st[k])
 				supps[k].supp[0]++;
 	}
 	for (; j < r2_end; j++) {
-		if (picks[i].pick[j] != "NS")
+		if (picks[i].pick[j] != null && picks[i].pick[j] != "NS")
 			selected[1]++;
-		if (picks[i].pick[j] == match_result[j]) {
+		if (picks[i].pick[j] != null && picks[i].pick[j] == match_result[j]) {
 			won[1]++;
 			pts[1] = pts[1] + 2;
 		}
 		for (k = 0; k < teams; k++)
-			if (picks[i].pick[j] == teams_list_st[k])
+			if (picks[i].pick[j] != null && picks[i].pick[j] == teams_list_st[k])
 				supps[k].supp[1]++;
 	}
 	for (; j < r3_end; j++) {
-		if (picks[i].pick[j] != "NS")
+		if (picks[i].pick[j] != null && picks[i].pick[j] != "NS")
 			selected[2]++;
-		if (picks[i].pick[j] == match_result[j]) {
+		if (picks[i].pick[j] != null && picks[i].pick[j] == match_result[j]) {
 			won[2]++;
 			pts[2] = pts[2] + 3;
 		}
 		for (k = 0; k < teams; k++)
-			if (picks[i].pick[j] == teams_list_st[k])
+			if (picks[i].pick[j] != null && picks[i].pick[j] == teams_list_st[k])
 				supps[k].supp[2]++;
 	}
 	for (; j < r4_end; j++) {
-		if (picks[i].pick[j] != "NS")
+		if (picks[i].pick[j] != null && picks[i].pick[j] != "NS")
 			selected[3]++;
-		if (picks[i].pick[j] == match_result[j]) {
+		if (picks[i].pick[j] != null && picks[i].pick[j] == match_result[j]) {
 			won[3]++;
 			pts[3] = pts[3] + 4;
 		}
 		for (k = 0; k < teams; k++)
-			if (picks[i].pick[j] == teams_list_st[k])
+			if (picks[i].pick[j] != null && picks[i].pick[j] == teams_list_st[k])
 				supps[k].supp[3]++;
 	}
 	divp = "<table border='0'><tr><td><h3>Points</h3><table border='0'><tr bgcolor='00FFE0'><th align='center'></th><th align='center'>Round 1</th>";
