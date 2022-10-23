@@ -5,7 +5,7 @@ var r4_end = 42;
 var r3_exists = true;
 var r4_exists = false;
 
-var match_result = new Array("NAM", "NED", "SCOT", "ZIM", "NED", "SL", "IRE", "WI", "SL", "UAE", "IRE", "ZIM", "NZ", "ENG", "SL"); //Next Match: "SCOT", "ZIM"
+var match_result = new Array("NAM", "NED", "SCOT", "ZIM", "NED", "SL", "IRE", "WI", "SL", "UAE", "IRE", "ZIM", "NZ", "ENG", "SL", "IND"); //Next Match: "SCOT", "ZIM"
 //match_result[0] = "NAM";
 //match_result[1] = "NED";
 var mat_per_week = new Array(0, 14, 28, 41); // included
