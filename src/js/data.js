@@ -6,7 +6,7 @@ var r3_exists = true;
 var r4_exists = false;
 
 var match_result = new Array("NAM", "NED", "SCOT", "ZIM", "NED", "SL", "IRE", "WI", "SL", "UAE", "IRE", "ZIM", "NZ", "ENG", "SL", "IND", "BAN", "NR", "AUS", "IRE");
-match_result.push("NR", "SA", "IND", "ZIM", "NR", "NR", "NZ", "BAN", "PAK", "SA", "AUS", "SL");
+match_result.push("NR", "SA", "IND", "ZIM", "NR", "NR", "NZ", "BAN", "PAK", "SA", "AUS", "SL", "ENG");
 //match_result[0] = "NAM";
 //match_result[1] = "NED";
 var mat_per_week = new Array(0, 14, 28, 41); // included
@@ -40,7 +40,7 @@ var steam_part = new Array(0, 0, 0, 0, 0, 0, 0);
 var steam_avg = new Array(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
 var steam_cnt = steam.length;
 
-var dat = new Array("16-OCT", "16-OCT", "17-OCT", "17-OCT", "18-OCT", "18-OCT", "19-OCT", "19-OCT", "20-OCT", "20-OCT", "21-OCT", "21-OCT", "22-OCT", "22-OCT", "23-OCT", "23-OCT", "24-OCT", "24-OCT", "25-OCT", "26-OCT", "26-OCT", "27-OCT", "27-OCT", "27-OCT", "28-OCT", "28-OCT", "29-OCT", "30-OCT", "30-OCT", "30-OCT", "31-OCT", "1-NOV", "2-NOV", "2-NOV", "2-NOV", "3-NOV", "4-NOV", "4-NOV", "5-NOV", "6-NOV", "6-NOV", "6-NOV");
+var dat = new Array("16-OCT", "16-OCT", "17-OCT", "17-OCT", "18-OCT", "18-OCT", "19-OCT", "19-OCT", "20-OCT", "20-OCT", "21-OCT", "21-OCT", "22-OCT", "22-OCT", "23-OCT", "23-OCT", "24-OCT", "24-OCT", "25-OCT", "26-OCT", "26-OCT", "27-OCT", "27-OCT", "27-OCT", "28-OCT", "28-OCT", "29-OCT", "30-OCT", "30-OCT", "30-OCT", "31-OCT", "1-NOV", "1-NOV", "2-NOV", "2-NOV", "3-NOV", "4-NOV", "4-NOV", "5-NOV", "6-NOV", "6-NOV", "6-NOV");
 var matches = dat.length;
 //alert("matches = " + matches);
 
