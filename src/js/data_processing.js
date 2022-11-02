@@ -39,18 +39,23 @@ for (mi = 0; mi < match_result.length; mi++) {
 	}
 }
 
-/*for (j = 0; j < players; j++) {
-	for (i = 0; i < 4; i++)
+for (j = 0; j < players; j++) {
+	for (i = 0; i < 2; i++)
 		if (semi_result[i] == picks[j].pick[r4_end + i])
 			player_score[j] = player_score[j] + 10;
-		else if (semi_result[0] == picks[j].pick[r4_end + i] || semi_result[1] == picks[j].pick[r4_end + i] || semi_result[2] == picks[j].pick[r4_end + i] || semi_result[3] == picks[j].pick[r4_end + i])
+		else if (semi_result[0] == picks[j].pick[r4_end + i] || semi_result[1] == picks[j].pick[r4_end + i]) //|| semi_result[2] == picks[j].pick[r4_end + i] || semi_result[3] == picks[j].pick[r4_end + i])
+			player_score[j] = player_score[j] + 7;
+	for (; i < 4; i++)
+		if (semi_result[i] == picks[j].pick[r4_end + i])
+			player_score[j] = player_score[j] + 10;
+		else if (semi_result[2] == picks[j].pick[r4_end + i] || semi_result[3] == picks[j].pick[r4_end + i]) //|| semi_result[2] == picks[j].pick[r4_end + i] || semi_result[3] == picks[j].pick[r4_end + i])
 			player_score[j] = player_score[j] + 7;
 	for (; i < 6; i++)
 		if (semi_result[4] == picks[j].pick[r4_end + i] || semi_result[5] == picks[j].pick[r4_end + i])
 			player_score[j] = player_score[j] + 12;
 	if (semi_result[6] == picks[j].pick[r4_end + i])
 		player_score[j] = player_score[j] + 15;
-}*/
+}/**/
 for (j = 0; j < players; j++) {
 	player_list_ranks[j] = player_list[j];
 	player_score_ranks[j] = player_score[j];

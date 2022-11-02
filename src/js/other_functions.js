@@ -321,9 +321,9 @@ function semi_info() {
 	var menuid1 = document.getElementById("semi_drop1");
 	var menuid2 = document.getElementById("semi_drop2");
 	var menuid3 = document.getElementById("semi_drop3");
-	var ply1 = 1000;
-	var ply2 = 1000;
-	var ply3 = 1000;
+	var ply1 = 10000;
+	var ply2 = 10000;
+	var ply3 = 10000;
 	for (i = 0; i < players; i++) {
 		if (player_list[i] == menuid1.options[menuid1.selectedIndex].value)
 			ply1 = i;
@@ -334,37 +334,67 @@ function semi_info() {
 	}
 	divplycom = "";
 	divplycom = divplycom + "<table border ='1' align='center'><tr bgcolor='00FFE0'><th>Position</th><th>Teams</th>";
-	if (ply1 != 1000)
+	if (ply1 != 10000)
 		divplycom = divplycom + "<th>" + player_list[ply1] + " Selection</th>"; //.toUpperCase()
-	if (ply2 != 1000)
+	if (ply2 != 10000)
 		divplycom = divplycom + "<th>" + player_list[ply2] + " Selection</th>"; //.toUpperCase()
-	if (ply3 != 1000)
+	if (ply3 != 10000)
 		divplycom = divplycom + "<th>" + player_list[ply3] + " Selection</th>"; //.toUpperCase()
 	divplycom = divplycom + "</tr>";
-	for (i = 0; i < 4; i++) {
-		divplycom = divplycom + "<tr><td align='center'>Semi Finalist " + (i + 1) + "</td><td>" + teams_list[teams_list_st.indexOf(semi_result[i])] + "</td>";
-		if (ply1 != 1000) {
+	for (i = 0; i < 2; i++) {
+		divplycom = divplycom + "<tr><td align='center'>Group 1 Top " + (i + 1) + "</td><td>" + teams_list[teams_list_st.indexOf(semi_result[i])] + "</td>";
+		if (ply1 != 10000) {
 			if (picks[ply1].pick[r4_end + i] == semi_result[i])
 				divplycom = divplycom + "<td  bgcolor='lime'>";
-			else if (picks[ply1].pick[r4_end + i] == semi_result[0] || picks[ply1].pick[r4_end + i] == semi_result[1] || picks[ply1].pick[r4_end + i] == semi_result[2] || picks[ply1].pick[r4_end + i] == semi_result[3])
+			else if (picks[ply1].pick[r4_end + i] == semi_result[0] || picks[ply1].pick[r4_end + i] == semi_result[1])// || picks[ply1].pick[r4_end + i] == semi_result[2] || picks[ply1].pick[r4_end + i] == semi_result[3])
 				divplycom = divplycom + "<td  bgcolor='silver'>";
 			else
 				divplycom = divplycom + "<td>";
 			divplycom = divplycom + teams_list[teams_list_st.indexOf(picks[ply1].pick[r4_end + i])] + "</td>";
 		}
-		if (ply2 != 1000) {
+		if (ply2 != 10000) {
 			if (picks[ply2].pick[r4_end + i] == semi_result[i])
 				divplycom = divplycom + "<td  bgcolor='lime'>";
-			else if (picks[ply2].pick[r4_end + i] == semi_result[0] || picks[ply2].pick[r4_end + i] == semi_result[1] || picks[ply2].pick[r4_end + i] == semi_result[2] || picks[ply2].pick[r4_end + i] == semi_result[3])
+			else if (picks[ply2].pick[r4_end + i] == semi_result[0] || picks[ply2].pick[r4_end + i] == semi_result[1])// || picks[ply2].pick[r4_end + i] == semi_result[2] || picks[ply2].pick[r4_end + i] == semi_result[3])
 				divplycom = divplycom + "<td  bgcolor='silver'>";
 			else
 				divplycom = divplycom + "<td>";
 			divplycom = divplycom + teams_list[teams_list_st.indexOf(picks[ply2].pick[r4_end + i])] + "</td>";
 		}
-		if (ply3 != 1000) {
+		if (ply3 != 10000) {
 			if (picks[ply3].pick[r4_end + i] == semi_result[i])
 				divplycom = divplycom + "<td  bgcolor='lime'>";
-			else if (picks[ply3].pick[r4_end + i] == semi_result[0] || picks[ply3].pick[r4_end + i] == semi_result[1] || picks[ply3].pick[r4_end + i] == semi_result[2] || picks[ply3].pick[r4_end + i] == semi_result[3])
+			else if (picks[ply3].pick[r4_end + i] == semi_result[0] || picks[ply3].pick[r4_end + i] == semi_result[1])// || picks[ply3].pick[r4_end + i] == semi_result[2] || picks[ply3].pick[r4_end + i] == semi_result[3])
+				divplycom = divplycom + "<td  bgcolor='silver'>";
+			else
+				divplycom = divplycom + "<td>";
+			divplycom = divplycom + teams_list[teams_list_st.indexOf(picks[ply3].pick[r4_end + i])] + "</td>";
+		}
+	}
+	for (; i < 4; i++) {
+		divplycom = divplycom + "<tr><td align='center'>Group 2 Top " + (i - 1) + "</td><td>" + teams_list[teams_list_st.indexOf(semi_result[i])] + "</td>";
+		if (ply1 != 10000) {
+			if (picks[ply1].pick[r4_end + i] == semi_result[i])
+				divplycom = divplycom + "<td  bgcolor='lime'>";
+			else if (picks[ply1].pick[r4_end + i] == semi_result[2] || picks[ply1].pick[r4_end + i] == semi_result[3])// || picks[ply1].pick[r4_end + i] == semi_result[2] || picks[ply1].pick[r4_end + i] == semi_result[3])
+				divplycom = divplycom + "<td  bgcolor='silver'>";
+			else
+				divplycom = divplycom + "<td>";
+			divplycom = divplycom + teams_list[teams_list_st.indexOf(picks[ply1].pick[r4_end + i])] + "</td>";
+		}
+		if (ply2 != 10000) {
+			if (picks[ply2].pick[r4_end + i] == semi_result[i])
+				divplycom = divplycom + "<td  bgcolor='lime'>";
+			else if (picks[ply2].pick[r4_end + i] == semi_result[2] || picks[ply2].pick[r4_end + i] == semi_result[3])// || picks[ply2].pick[r4_end + i] == semi_result[2] || picks[ply2].pick[r4_end + i] == semi_result[3])
+				divplycom = divplycom + "<td  bgcolor='silver'>";
+			else
+				divplycom = divplycom + "<td>";
+			divplycom = divplycom + teams_list[teams_list_st.indexOf(picks[ply2].pick[r4_end + i])] + "</td>";
+		}
+		if (ply3 != 10000) {
+			if (picks[ply3].pick[r4_end + i] == semi_result[i])
+				divplycom = divplycom + "<td  bgcolor='lime'>";
+			else if (picks[ply3].pick[r4_end + i] == semi_result[2] || picks[ply3].pick[r4_end + i] == semi_result[3])// || picks[ply3].pick[r4_end + i] == semi_result[2] || picks[ply3].pick[r4_end + i] == semi_result[3])
 				divplycom = divplycom + "<td  bgcolor='silver'>";
 			else
 				divplycom = divplycom + "<td>";
@@ -373,21 +403,21 @@ function semi_info() {
 	}
 	for (; i < 6; i++) {
 		divplycom = divplycom + "</tr><tr><td align='center'>Finalist " + (i - 3) + "</td><td>" + teams_list[teams_list_st.indexOf(semi_result[i])] + "</td>";
-		if (ply1 != 1000) {
+		if (ply1 != 10000) {
 			if (picks[ply1].pick[r4_end + i] == semi_result[4] || picks[ply1].pick[r4_end + i] == semi_result[5])
 				divplycom = divplycom + "<td  bgcolor='Aqua'>";
 			else
 				divplycom = divplycom + "<td>";
 			divplycom = divplycom + teams_list[teams_list_st.indexOf(picks[ply1].pick[r4_end + i])] + "</td>";
 		}
-		if (ply2 != 1000) {
+		if (ply2 != 10000) {
 			if (picks[ply2].pick[r4_end + i] == semi_result[4] || picks[ply2].pick[r4_end + i] == semi_result[5])
 				divplycom = divplycom + "<td  bgcolor='Aqua'>";
 			else
 				divplycom = divplycom + "<td>";
 			divplycom = divplycom + teams_list[teams_list_st.indexOf(picks[ply2].pick[r4_end + i])] + "</td>";
 		}
-		if (ply3 != 1000) {
+		if (ply3 != 10000) {
 			if (picks[ply3].pick[r4_end + i] == semi_result[4] || picks[ply3].pick[r4_end + i] == semi_result[5])
 				divplycom = divplycom + "<td  bgcolor='Aqua'>";
 			else
@@ -396,21 +426,21 @@ function semi_info() {
 		}
 	}
 	divplycom = divplycom + "</tr><tr><td align='center'>Winner</td><td>" + teams_list[teams_list_st.indexOf(semi_result[6])] + "</td>";
-	if (ply1 != 1000) {
+	if (ply1 != 10000) {
 		if (picks[ply1].pick[r4_end + i] == semi_result[i])
 			divplycom = divplycom + "<td  bgcolor='Darkorange'>";
 		else
 			divplycom = divplycom + "<td>";
 		divplycom = divplycom + teams_list[teams_list_st.indexOf(picks[ply1].pick[r4_end + i])] + "</td>";
 	}
-	if (ply2 != 1000) {
+	if (ply2 != 10000) {
 		if (picks[ply2].pick[r4_end + i] == semi_result[i])
 			divplycom = divplycom + "<td  bgcolor='Darkorange'>";
 		else
 			divplycom = divplycom + "<td>";
 		divplycom = divplycom + teams_list[teams_list_st.indexOf(picks[ply2].pick[r4_end + i])] + "</td>";
 	}
-	if (ply3 != 1000) {
+	if (ply3 != 10000) {
 		if (picks[ply3].pick[r4_end + i] == semi_result[i])
 			divplycom = divplycom + "<td  bgcolor='Darkorange'>";
 		else

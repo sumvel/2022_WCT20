@@ -20,10 +20,10 @@ if (week_num > 0) {
 }
 
 
-//var semi_result = new Array("GT", "RR", "LSG", "RCB", "GT", "RR", "GT");
+var semi_result = new Array("TBD", "TBD", "TBD", "TBD", "TBD", "TBD", "TBD");
 
-var teams_list = new Array("Netherlands", "Sri Lanka", "United Arab Emirates", "Namibia", "Ireland", "West Indies", "Scotland", "Zimbabwe", "England", "New Zealand", "Australia", "Afghanistan", "Bangladesh", "Pakistan", "India", "South Africa", "Not Selected");
-var teams_list_st = new Array("NED", "SL", "UAE", "NAM", "IRE", "WI", "SCOT", "ZIM", "ENG", "NZ", "AUS", "AFG", "BAN", "PAK", "IND", "SA", "NS");
+var teams_list = new Array("Netherlands", "Sri Lanka", "United Arab Emirates", "Namibia", "Ireland", "West Indies", "Scotland", "Zimbabwe", "England", "New Zealand", "Australia", "Afghanistan", "Bangladesh", "Pakistan", "India", "South Africa", "Not Selected", "To be decided");
+var teams_list_st = new Array("NED", "SL", "UAE", "NAM", "IRE", "WI", "SCOT", "ZIM", "ENG", "NZ", "AUS", "AFG", "BAN", "PAK", "IND", "SA", "NS", "TBD");
 var teams = 16;
 /*		
 		10 - Not Selected
