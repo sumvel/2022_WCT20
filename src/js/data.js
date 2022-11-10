@@ -20,7 +20,7 @@ if (week_num > 0) {
 }
 
 
-var semi_result = new Array("NZ", "ENG", "IND", "PAK", "PAK", "TBD", "TBD");
+var semi_result = new Array("NZ", "ENG", "IND", "PAK", "PAK", "ENG", "TBD");
 
 var teams_list = new Array("Netherlands", "Sri Lanka", "United Arab Emirates", "Namibia", "Ireland", "West Indies", "Scotland", "Zimbabwe", "England", "New Zealand", "Australia", "Afghanistan", "Bangladesh", "Pakistan", "India", "South Africa", "Not Selected", "To be decided");
 var teams_list_st = new Array("NED", "SL", "UAE", "NAM", "IRE", "WI", "SCOT", "ZIM", "ENG", "NZ", "AUS", "AFG", "BAN", "PAK", "IND", "SA", "NS", "TBD");
