@@ -55,7 +55,14 @@ for (j = 0; j < players; j++) {
 			player_score[j] = player_score[j] + 12;
 	if (semi_result[6] == picks[j].pick[r4_end + i])
 		player_score[j] = player_score[j] + 15;
-}/**/
+}
+
+/*
+//for checking the worst performers
+for (j = 0; j < players; j++) {
+	if(picks[j].pick.includes("NS"))
+		player_score[j]=0;
+}*/
 for (j = 0; j < players; j++) {
 	player_list_ranks[j] = player_list[j];
 	player_score_ranks[j] = player_score[j];
